@@ -5,6 +5,8 @@
   --font-Roboto: "Roboto", sans-serif;
   --color-primary: #DF3636;
   --color-secondary: "#38435C";
+  --color-hero-bg: #34A853;
+  --color-hero-bg1: #F88513;
   --color-gray: #A9B0B8;
   --breakpoint-xs: 375px;
 }
@@ -37,8 +39,43 @@ ul li .nav-item {
   gap: 4px;
   cursor: pointer;
 }
-
-
+/* Hero section */
+.top-tittle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 150%;
+  font-family: var(--font-Inter);
+  padding: 10px 12px;
+  border-radius: 100px;
+}
+.Hero-title {
+  font-size: 72px;
+  line-height: 120%;
+  font-weight: 800;
+  font-family: var(--font-Inter);
+}
+.Hero-title1 {
+  color: var(--color-primary);
+  font-style: italic;
+}
+.Hero-ctabtn {
+  display: flex;
+  max-width: 380px;
+  border: #ccc;
+}
+.Hero-ctabtn button {
+  background: var(--color-hero-bg1);
+}
+.Hero-description {
+  font-size: 18px;
+  line-height: 150%;
+  font-family: var(--font-Roboto);
+  padding-right: 20px;
+  color: #38435C;
+}
 /* From Uiverse.io by SivarajRathinam */ 
 .accordion {
   width: 300px;
