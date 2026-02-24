@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css --minify"
+    "start": "live-server public",
+    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
