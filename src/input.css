@@ -5,6 +5,8 @@
   --font-Roboto: "Roboto", sans-serif;
   --color-primary: #DF3636;
   --color-secondary: "#38435C";
+  --color-hero-bg: #34A853;
+  --color-hero-bg1: #F88513;
   --color-gray: #A9B0B8;
   --breakpoint-xs: 375px;
 }
@@ -37,8 +39,183 @@ ul li .nav-item {
   gap: 4px;
   cursor: pointer;
 }
+/* Hero section */
+.hero-section {
+  padding: 80px 0;
+  background: #FFFFFF; /* পুরো ব্যাকগ্রাউন্ড সাদা */
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 55%;
+}
+
+.top-tittle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-style: italic;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: #FFF4F0;
+  border: 1px solid var(--color-primary);
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+.Hero-title {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #101828;
+}
+
+.Hero-title1 {
+  color: var(--color-primary);
+  font-style: italic;
+  display: block;
+}
+
+.Hero-ctabtn {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.cta-small {
+  background: #F9FAFB;
+  padding: 8px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cta-small.green { border: 1px solid #6CE9A6; color: #027A48; }
+.cta-small.orange { border: 1px solid #FEB273; color: #B93815; }
+.cta-small.red { border: 1px solid #FDA29B; color: #B42318; }
+
+.Hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #475467;
+  margin-bottom: 32px;
+}
+
+.flex-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background: #E33B32;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: #1D2939; /* ফিগমা অনুযায়ী কালো বাটন */
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Right Side Form Animation */
+.hero-right {
+  flex: 1;
+  max-width: 420px;
+}
+
+.animated-border-box {
+  position: relative;
+  padding: 3px;
+  background: #F2F4F7;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+}
+
+.animated-border-box::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: conic-gradient(#00FFFF, #FF00FF, #FF5C00, #00FFFF);
+  animation: rotateBorder 4s linear infinite;
+}
+
+@keyframes rotateBorder {
+  to { transform: rotate(360deg); }
+}
+
+.form-content {
+  position: relative;
+  background: white;
+  padding: 32px;
+  border-radius: 21px;
+  z-index: 1;
+}
+
+.form-title { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.form-subtitle { font-size: 14px; color: #667085; margin-bottom: 24px; }
+
+.input-group { margin-bottom: 16px; text-align: left; }
+.input-group label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #D0D5DD;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.input-field input { border: none; outline: none; width: 100%; font-size: 14px; }
+
+.submit-btn {
+  width: 100%;
+  background: #E33B32;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
 /* From Uiverse.io by SivarajRathinam */ 
 .accordion {
   width: 300px;
