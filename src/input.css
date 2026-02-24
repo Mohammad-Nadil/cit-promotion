@@ -130,7 +130,7 @@ ul li .nav-item {
 
 @layer footer{
   .address-card{
-    @apply flex flex-col items-center text-center gap-2 capitalize  ; 
+    @apply flex flex-col items-center text-center gap-2 capitalize   ; 
   }
   .address-title{
     @apply text-white font-semibold font-Roboto
