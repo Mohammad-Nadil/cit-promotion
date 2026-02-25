@@ -9,10 +9,11 @@
   --color-hero-bg1: #F88513;
   --color-gray: #A9B0B8;
   --breakpoint-xs: 375px;
+  --drop-shadow-3xl: 0 4px 40px rgba(175, 194, 212, 0.2); 
 }
 
 .container {
-  @apply  max-w-285  mx-auto px-3 xl:px-0;
+  @apply  px-3 mx-auto max-w-285 xl:px-0;
 }
 
 .header-text {
@@ -270,7 +271,7 @@ ul li .nav-item {
 
 @layer footer{
   .address-card{
-    @apply flex flex-col items-center text-center gap-2 capitalize   ; 
+    @apply flex flex-col items-center gap-2 text-center capitalize ; 
   }
   .address-title{
     @apply text-white font-semibold font-Roboto
