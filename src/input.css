@@ -3,11 +3,11 @@
 @theme {
   --font-Inter: "Inter", sans-serif;
   --font-Roboto: "Roboto", sans-serif;
-  --color-primary: #DF3636;
-  --color-secondary: "#38435C";
-  --color-hero-bg: #34A853;
-  --color-hero-bg1: #F88513;
-  --color-gray: #A9B0B8;
+  --color-primary: #df3636;
+  --color-secondary: #38435C;
+  --color-hero-bg: #34a853;
+  --color-hero-bg1: #f88513;
+  --color-gray: #a9b0b8;
   --breakpoint-xs: 375px;
   --drop-shadow-3xl: 0 4px 40px rgba(175, 194, 212, 0.2); 
 }
@@ -20,19 +20,19 @@
   @apply xs:text-2xl md:text-4xl text-[56px] leading-tight font-Inter font-extrabold;
 }
 
-.title-text{
-  @apply text-xs xs:text-base md:text-lg font-Roboto text-secondary ;
+.title-text {
+  @apply text-xs xs:text-base md:text-lg font-Roboto text-secondary;
 }
 /* Navber */
 ul li .nav-item {
-  @apply text-[16px] font-Roboto font-semibold leading-[150%]
+  @apply text-[16px] font-Roboto font-semibold leading-[150%];
 }
 ul li .nav-item:hover {
   @apply text-primary transition duration-300
 }
 .btn{
   background: var(--color-primary);
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   line-height: 150%;
   font-family: var(--font-Roboto);
@@ -298,6 +298,130 @@ ul li .nav-item:hover {
     padding: 6px 12px;
   }
 }
+/* From Uiverse.io by SivarajRathinam */ 
+.accordion {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 5px;
+}
+
+.accordion-item .content {
+  font-size: 12px;
+}
+
+.accordion input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  height: 0px;
+  padding: 0px;
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.accordion input[type="radio"]:checked + .accordion-header + .content {
+  height: auto;
+  padding: 15px;
+}
+.accordion-icon {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.accordion input[type="radio"]:checked + .accordion-header .accordion-icon {
+  transform: rotate(180deg);
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: left;
+}
+.accordion-header .accordion-title {
+  font-size: 14px;
+}
+
+/* ===================================
+   Course Module Section
+=================================== */
+
+.module-container {
+  @apply relative overflow-hidden lg:pt-40 pt-24 md:pt-32 pb-20;
+}
+
+/* Background curve */
+.module-bg-curve {
+  @apply absolute top-0 left-1/2 -translate-x-1/2 w-full h-full
+         bg-gradient-to-t from-white from-90% md:from-90% lg:from-80%
+         to-[#fbdcdc] rounded-t-full z-0;
+}
+
+/* Expanded Card */
+.module-card-expanded {
+  @apply border rounded-xl p-5;
+}
+
+/* Collapsed Card */
+.module-card-collapsed {
+  @apply border rounded-xl p-5 flex justify-between items-center;
+}
+
+/* Header Row */
+.module-card-header {
+  @apply flex justify-between items-center;
+}
+
+/* Title Wrap */
+.module-card-title-wrap {
+  @apply flex items-center gap-3;
+}
+
+/* Icon */
+.module-icon {
+  @apply w-8 h-8 flex items-center justify-center rounded-md;
+}
+
+/* Title */
+.module-title {
+  @apply font-semibold text-gray-800;
+}
+
+/* Description */
+.module-description {
+  @apply text-sm text-gray-600 mt-4 leading-relaxed;
+}
+
+/* Color Variants */
+.module-red { @apply border-red-300; }
+.module-red .module-icon { @apply bg-red-100 text-red-500; }
+
+.module-blue { @apply border-blue-300; }
+.module-blue .module-icon { @apply bg-blue-100 text-blue-500; }
+
+.module-green { @apply border-green-300; }
+.module-green .module-icon { @apply bg-green-100 text-green-500; }
+
+.module-orange { @apply border-orange-300; }
+.module-orange .module-icon { @apply bg-orange-100 text-orange-500; }
+
+/* Button */
+.module-button {
+  @apply bg-[#DF3636] text-white px-8 py-3 rounded-lg shadow-md transition;
+}
+.module-button:hover {
+  @apply bg-gradient-to-r from-[#DF3636] to-[#FF8079];
+}
+
+
 /* From Uiverse.io by SivarajRathinam */ 
 .accordion {
   width: 300px;
