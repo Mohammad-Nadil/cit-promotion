@@ -60,13 +60,12 @@ ul li .nav-item:hover {
 
   /* Badge / Top Title */
   .top-tittle {
-    @apply inline-flex items-center gap-2 italic text-[14px] py-2 px-4 rounded-[100px] bg-[#FFF4F0] border border-[#E33B32] mb-6 text-[#E33B32];
-    /* Note: --color-primary ke ami #E33B32 dhore niyechi apnar ager code onujayi */
+    @apply inline-flex items-center font-Inter gap-2 italic text-[14px] py-2 px-4 rounded-[100px] bg-[#FFF4F0] border border-[#E33B32] mb-6 text-[#E33B32];
   }
 
   /* Titles */
   .Hero-title {
-    @apply text-[64px] leading-[1.1] font-extrabold mb-6 text-[#101828];
+    @apply text-[64px] leading-[1.1] font-Inter font-extrabold mb-6 text-[#101828];
   }
 
   .Hero-title1 {
@@ -75,7 +74,7 @@ ul li .nav-item:hover {
 
   /* CTA Buttons Group */
   .Hero-ctabtn {
-    @apply flex gap-3 mb-6;
+    @apply flex gap-3 font-Roboto mb-6;
   }
 
   .cta-small {
@@ -89,31 +88,31 @@ ul li .nav-item:hover {
 
   /* Description */
   .Hero-description {
-    @apply text-[18px] leading-[1.6] text-[#475467] mb-8;
+    @apply text-[18px] font-Roboto leading-[1.6] text-[#475467] mb-8;
   }
 
   /* Main Action Buttons */
   .flex-buttons {
-    @apply flex gap-4;
+    @apply flex font-Roboto gap-4;
   }
 
   .btn-primary {
-    @apply bg-[#E33B32] text-white border-none py-[14px] px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer;
+    @apply bg-[#E33B32] text-white border-none py-3.5 px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer;
   }
 
   .btn-secondary {
-    @apply bg-[#1D2939] text-white border-none py-[14px] px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer 
+    @apply bg-[#1D2939] text-white border-none py-3.5 px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer 
   }
 }
 
 /* Right Side Form Animation */
 @layer components {
   .hero-right {
-    @apply flex-1 max-w-[420px];
+    @apply flex-1 max-w-105;
   }
 
   .animated-border-box {
-    @apply relative p-[3px] bg-[#F2F4F7] rounded-[24px] overflow-hidden shadow-[0px_10px_30px_rgba(227,59,50,0.15)];
+    @apply relative p-0.75 bg-[#F2F4F7] rounded-3xl overflow-hidden shadow-[0px_10px_30px_rgba(227,59,50,0.15)];
   }
 
   .animated-border-box::before {
@@ -123,27 +122,27 @@ ul li .nav-item:hover {
   }
 
   .form-content {
-    @apply relative bg-white p-8 rounded-[21px] z-[1];
+    @apply relative bg-white p-8 rounded-[21px] z-1;
   }
 
   .form-title {
-    @apply text-[24px] font-bold mb-2;
+    @apply text-[24px] font-Inter font-bold mb-2;
   }
 
   .form-subtitle {
-    @apply text-[14px] text-[#667085] mb-6;
+    @apply text-[14px] font-Inter text-[#667085] mb-6;
   }
 
   .input-group {
-    @apply mb-4 text-left;
+    @apply mb-4 font-Inter text-left;
   }
 
   .input-group label {
-    @apply block text-[14px] font-medium mb-[6px];
+    @apply block text-[14px] font-Inter font-medium mb-1.5;
   }
 
   .input-field {
-    @apply flex items-center gap-[10px] border border-[#D0D5DD] py-[10px] px-[14px] rounded-lg;
+    @apply flex items-center gap-2.5 border border-[#D0D5DD] py-2.5 px-3.5 rounded-lg;
   }
 
   .input-field input {
@@ -151,7 +150,10 @@ ul li .nav-item:hover {
   }
 
   .submit-btn {
-    @apply w-full bg-[#E33B32] text-white border-none p-[14px] rounded-lg font-semibold cursor-pointer mt-[10px];
+    @apply w-full bg-[#E33B32] text-white font-Roboto border-none p-3.5 rounded-lg font-semibold cursor-pointer mt-2.5;
+  }
+  .footer-text {
+    @apply text-center text-[14px] font-Inter text-[#6F7B88] mt-6;
   }
 }
 
