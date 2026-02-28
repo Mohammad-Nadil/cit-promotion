@@ -17,10 +17,7 @@
 }
 
 .header-text {
-  @apply xs:text-2xl md:text-4xl text-[56px] leading-tight font-Inter font-extrabold;
-}
-.italic{
-  @apply italic 
+  @apply xs:text-xl  lg:text-4xl 2xl:text-[56px] leading-tight font-Inter font-extrabold;
 }
 
 .title-text {
@@ -364,30 +361,9 @@ ul li .nav-item:hover {
   @apply relative overflow-hidden lg:pt-40 pt-24 md:pt-32 pb-20;
 }
 
-/* Expanded Card */
-.module-card-expanded {
-  @apply border rounded-xl p-5;
-}
 
-/* Collapsed Card */
-.module-card-collapsed {
-  @apply border rounded-xl p-5 flex justify-between items-center;
-}
 
-/* Header Row */
-.module-card-header {
-  @apply flex justify-between items-center;
-}
 
-/* Title Wrap */
-.module-card-title-wrap {
-  @apply flex items-center gap-3;
-}
-
-/* Icon */
-.module-icon {
-  @apply w-8 h-8 flex items-center justify-center rounded-md;
-}
 
 /* Description */
 .module-description {
@@ -428,22 +404,26 @@ ul li .nav-item:hover {
   display: none;
 }
 
-.accordion .content {
-  height: 0px;
-  padding: 0px;
+.content {
+  height: 0;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
-.accordion input[type="radio"]:checked + .accordion-header + .content {
-  @apply h-auto px-4 py-1;
+
+.accordion-item.active .content {
+  height: auto;
+  padding: 10px 0;
 }
-.accordion-icon {
+
+.accordion-header {
   display: flex;
-  align-items: center;
-  transition: all 0.5s ease;
+  justify-content: space-between;
+  cursor: pointer;
 }
-.accordion input[type="radio"]:checked + .accordion-header .accordion-icon {
+
+.accordion-item.active .accordion-icon {
   transform: rotate(180deg);
+  transition: 0.3s;
 }
 
 @layer footer {

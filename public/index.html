@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <link
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
@@ -27,7 +28,6 @@
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
-
   </head>
   <body>
     <header id="heder" class="">
@@ -179,25 +179,31 @@
         </div>
       </section>
     </header>
-    
-    <section>
+
+    <section class="relative">
+      <img
+        class="absolute hidden md:block top-1/2 left-1/2 -translate-1/2 max-w-full h-full object-contain -z-10"
+        src="./images/round.png"
+        alt=""
+      />
       <div class="container py-13 md:py-27">
         <div
           class="flex flex-col md:flex-row gap-[8px] md:gap-[16px] justify-center text-center md:text-left"
         >
           <h1
-            class="font-Inter font-extrabold text-[32px] md:text-[56px] leading-[120%]"
+            class="font-Inter font-extrabold text-xl md:text-4xl lg:text-5xl leading-tight"
           >
             Here Will Be
+
+            <span
+              class="font-Inter italic font-extrabold leading-[120%] text-[#DF3636]"
+            >
+              Promotion Video
+            </span>
           </h1>
-          <h2
-            class="font-Inter italic font-extrabold text-[32px] md:text-[56px] leading-[120%] text-[#DF3636]"
-          >
-            Promotion Video
-          </h2>
         </div>
         <p
-          class="font-Roboto text-[14px] md:text-[18px] leading-[120%] text-center text-[#38435C] mt-[16px] mb-[32px]"
+          class="font-Roboto text-[14px] lg:text-lg leading-[120%] text-center text-[#38435C] mt-[16px] mb-[32px]"
         >
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere <br class="hidden md:block" />
@@ -205,9 +211,9 @@
           volutpat lobortis.
         </p>
 
-        <div class="relative">
+        <div class="relative flex justify-center items-center">
           <div
-            class="w-full aspect-video rounded-xl border-2 border-primary/40"
+            class="w-4/5 xl:w-full mask-auto aspect-video rounded-xl border-2 border-primary/40"
           >
             <iframe
               width="100%"
@@ -226,16 +232,15 @@
               "
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-            ></iframe>
+            ></iframe
+            ><img
+              class="absolute top-1/2 left-1/2 md:hidden -translate-1/2 max-w-full h-full object-contain -z-10"
+              src="./images/round.png"
+              alt=""
+            />
           </div>
-
-          <img
-            class="absolute top-0 left-0 max-w-full h-full object-contain 2xl:scale-150 -z-10"
-            src="./images/round.png"
-            alt=""
-          />
         </div>
-         <div
+        <div
           class="flex flex-col md:flex-row gap-[24px] items-start justify-between mt-[32px]"
         >
           <div>
@@ -295,7 +300,7 @@
           <!-- Heading -->
           <div class="text-center mb-14">
             <h2
-              class="xs:text-2xl md:text-4xl text-[56px] leading-tight font-Inter font-extrabold"
+              class="xs:text-2xl md:text-4xl lg:text-6xl leading-tight font-Inter font-extrabold"
             >
               Here Will Be
               <span class="text-[#DF3636] italic">Course Module</span>
@@ -309,243 +314,128 @@
           </div>
 
           <!-- Modules Grid -->
-          <div class="">
-            <!-- Expanded Red -->
-            <!-- From Uiverse.io by SivarajRathinam -->
-            <div class="accordion grid md:grid-cols-2 gap-6">
-              <div class="accordion-item">
-                <input type="radio" id="section1" name="accordion" />
-                <label for="section1" class="accordion-header">
-                  <label class="accordion-title" for="section1">
-                    <img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
+
+          <!-- Expanded Red -->
+          <!-- From Uiverse.io by SivarajRathinam -->
+          <div class="accordion grid sm:grid-cols-2 gap-5">
+            <div class="accordion-item border-red-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgRed.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
                 </div>
               </div>
-              <div class="accordion-item">
-                <input type="radio" id="section1" name="accordion" />
-                <label for="section1" class="accordion-header">
-                  <label class="accordion-title" for="section1"
-                    ><img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="module-description">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <input type="radio" id="section2" name="accordion" />
-                <label for="section2" class="accordion-header">
-                  <label class="accordion-title" for="section2"
-                    ><img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="module-description">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <input type="radio" id="section2" name="accordion" />
-                <label for="section2" class="accordion-header">
-                  <label class="accordion-title" for="section2"
-                    ><img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="module-description">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <input type="radio" id="section2" name="accordion" />
-                <label for="section2" class="accordion-header">
-                  <label class="accordion-title" for="section2"
-                    ><img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="module-description">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <input type="radio" id="section2" name="accordion" />
-                <label for="section2" class="accordion-header">
-                  <label class="accordion-title" for="section2"
-                    ><img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="module-description">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <input type="radio" id="section2" name="accordion" />
-                <label for="section2" class="accordion-header">
-                  <label class="accordion-title" for="section2"
-                    ><img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="module-description">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <input type="radio" id="section2" name="accordion" />
-                <label for="section2" class="accordion-header">
-                  <label class="accordion-title" for="section2"
-                    ><img src="./images/msgRed.png" alt="msg" />
-                    <h1>Module title will be here</h1></label
-                  >
-                  <div class="accordion-icon">
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      height="16"
-                      width="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
-                <div class="content">
-                  <p class="module-description">
-                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                    adipiscing sed mauris sapien.
-                  </p>
-                </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
+
+            <div class="accordion-item border-blue-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgBlue.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item border-green-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgGreen.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item border-orange-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgYello.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+            <div class="accordion-item border-red-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgRed.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item border-blue-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgBlue.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+            <div class="accordion-item border-green-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgGreen.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item border-red-300">
+              <div class="accordion-header">
+                <div class="accordion-title">
+                  <img src="./images/msgRed.png" alt="msg" />
+                  <h1>Module title will be here</h1>
+                </div>
+                <div class="accordion-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
 
           <!-- Load More Button -->
           <div class="text-center mt-12">
@@ -821,7 +711,7 @@
       </div>
     </section>
 
-       <section class="py-16 px-4 max-w-6xl mx-auto">
+    <section class="py-16 px-4 max-w-6xl mx-auto">
       <!-- Heading -->
       <div class="text-center mb-10">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
@@ -841,7 +731,7 @@
           <!-- Slide 1 -->
           <div class="swiper-slide">
             <div
-              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row "
+              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo -->
@@ -937,7 +827,7 @@
           </div>
           <div class="swiper-slide">
             <div
-              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row "
+              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo -->
@@ -1138,8 +1028,8 @@
     <!-- career section end (Hamim) -->
 
     <!-- Frequently asked Questions start -->
-    <section class="container py-20">
-      <div class="faq-wrapper">
+    <section class="">
+      <div class="faq-wrapper container py-20">
         <!-- Left Image -->
         <img
           src="./images/faq1.png"
@@ -1386,8 +1276,12 @@
         </div>
       </div>
     </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="./script.js"></script>
-   
+    <script>
+      function toggleFaq(el) {
+        el.classList.toggle("open");
+      }
+    </script>
   </body>
 </html>

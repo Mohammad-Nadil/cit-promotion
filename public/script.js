@@ -26,6 +26,24 @@ const swiper = new Swiper(".mySwiper", {
     1024: { slidesPerView: 3 },
   },
 });
-function toggleFaq(el) {
-  el.classList.toggle("open");
-}
+
+
+const items = document.querySelectorAll(".accordion-item");
+
+items.forEach((item, index) => {
+  item.querySelector(".accordion-header").addEventListener("click", () => {
+    // সব বন্ধ করবো আগে
+    items.forEach((i) => i.classList.remove("active"));
+
+    // current open
+    item.classList.add("active");
+
+    // পাশেরটাও open
+    if (index % 2 === 0 && items[index + 1]) {
+      items[index + 1].classList.add("active");
+    }
+    if (index % 2 === 1 && items[index - 1]) {
+      items[index - 1].classList.add("active");
+    }
+  });
+});
