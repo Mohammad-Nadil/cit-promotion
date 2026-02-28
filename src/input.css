@@ -10,6 +10,7 @@
   --color-gray: #a9b0b8;
   --breakpoint-xs: 375px;
   --drop-shadow-3xl: 0 4px 40px rgba(175, 194, 212, 0.2);
+  --breakpoint-3xl: 1600px;
 }
 
 .container {
@@ -17,11 +18,11 @@
 }
 
 .header-text {
-  @apply xs:text-xl  lg:text-4xl 2xl:text-[56px] leading-tight font-Inter font-extrabold;
+  @apply xs:text-xl  lg:text-4xl xl:text-[56px] leading-tight font-Inter font-extrabold pb-3;
 }
 
 .title-text {
-  @apply text-xs xs:text-base md:text-lg font-Roboto text-secondary;
+  @apply text-xs xs:text-base md:text-lg font-Roboto text-secondary text-center max-w-200 mx-auto;
 }
 /* Navber */
 ul li .nav-item {
@@ -352,6 +353,13 @@ ul li .nav-item:hover {
     padding: 6px 12px;
   }
 }
+/* -------------------------------------------------------------
+------------------Course Module Section ----------------------------
+------------------------------------------------------------- */
+
+.card {
+  @apply rounded-lg  border-none relative z-10 bg-transparent before:animate-[spin_5s_linear_infinite]  before:duration-1000 overflow-hidden before:absolute before:h-[90%] before:w-[200%] before:-z-1 before:top-1/2 before:left-1/3 before:-translate-x-1/3 before:-translate-y-1/2 before:bg-linear-to-r   before:to-transparent   shadow-md transition duration-300 hover:shadow-lg after:absolute after:h-[98%] after:w-[98%] after:-z-1 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-lg after:bg-white;
+}
 
 /* ===================================
    Course Module Section
@@ -360,10 +368,6 @@ ul li .nav-item:hover {
 .module-container {
   @apply relative overflow-hidden lg:pt-40 pt-24 md:pt-32 pb-20;
 }
-
-
-
-
 
 /* Description */
 .module-description {
@@ -519,7 +523,7 @@ ul li .nav-item:hover {
   border: 1px solid var(--rose-border);
   border-radius: 1rem;
   padding: 1.25rem 1.5rem;
-  transition: all .4s;
+  transition: all 0.4s;
   cursor: pointer;
   transition:
     border-color 0.3s,
@@ -535,7 +539,6 @@ ul li .nav-item:hover {
 .faq-item.open {
   background: var(--rose-open-bg);
   border-color: #f5c5c3;
-  padding-bottom: 0.5rem;
 }
 
 /* ── FAQ Trigger row ── */
@@ -569,16 +572,12 @@ ul li .nav-item:hover {
 
 /* ── Answer panel ── */
 .faq-answer {
-  font-family: "Inter", serif;
   max-height: 0;
   overflow: hidden;
-  transition:
-    max-height 0.35s ease,
-    padding-top 0.3s ease;
+  transition: max-height 0.4s ease;
 }
 
 .faq-item.open .faq-answer {
-  max-height: 300px;
   padding-top: 0.75rem;
 }
 

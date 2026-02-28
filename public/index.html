@@ -180,9 +180,9 @@
       </section>
     </header>
 
-    <section class="relative">
+    <section class="relative overflow-clip ">
       <img
-        class="absolute hidden object-contain h-full max-w-full md:block top-1/2 left-1/2 -translate-1/2 -z-10"
+        class="absolute hidden object-contain h-full max-w-full md:block top-1/2 left-1/2 -translate-1/2 3xl:w-400 -z-10"
         src="./images/round.png"
         alt=""
       />
@@ -190,9 +190,7 @@
         <div
           class="flex flex-col md:flex-row gap-[8px] md:gap-[16px] justify-center text-center md:text-left"
         >
-          <h1
-            class="text-xl font-extrabold leading-tight font-Inter md:text-4xl lg:text-5xl"
-          >
+          <h1 class="header-text">
             Here Will Be
 
             <span
@@ -202,9 +200,7 @@
             </span>
           </h1>
         </div>
-        <p
-          class="font-Roboto text-[14px] lg:text-lg leading-[120%] text-center text-[#38435C] mt-[16px] mb-[32px]"
-        >
+        <p class="pb-10 title-text md:pb-16">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere <br class="hidden md:block" />
           maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut
@@ -215,25 +211,29 @@
           <div
             class="w-4/5 border-2 xl:w-full mask-auto aspect-video rounded-xl border-primary/40"
           >
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/pfu0Ab_FASk?si=y9v0UIk0b_VQ_gza"
-              title="YouTube video player"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe
-            ><img
+            <div
+              class="relative w-full h-full video-thumbnail"
+              onclick="playVideo(this)"
+            >
+              <img
+                src="https://img.youtube.com/vi/pfu0Ab_FASk/maxresdefault.jpg"
+                alt="Video Thumbnail"
+              />
+
+              <div
+                class="absolute w-12 text-red-500 cursor-pointer custom-play top-1/2 left-1/2 -translate-1/2 sm:w-16 aspect-square"
+              >
+                <span
+                  class="absolute z-0 inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-primary"
+                ></span>
+                <div
+                  class="relative z-10 flex items-center justify-center w-full h-full text-2xl bg-white rounded-full sm:text-3xl aspect-square"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <img
               class="absolute object-contain h-full max-w-full top-1/2 left-1/2 md:hidden -translate-1/2 -z-10"
               src="./images/round.png"
               alt=""
@@ -291,7 +291,7 @@
 
     <section class="relative py-10 font-Inter overflow-clip">
       <div
-        class="absolute w-[200%] top-1/12 left-1/2 -translate-x-1/2 aspect-2/1 bg-gradient-to-t from-white from-90% to-[#fbdcdc] rounded-t-full z-0"
+        class="absolute w-[200%] top-1/12 left-1/2 -translate-y-[10%] sm:translate-y-0 -translate-x-1/2 aspect-video md:aspect-square sm:aspect-2/1 bg-linear-to-t from-white from-80% sm:from-90% to-[#fbdcdc] rounded-t-full z-0 "
       ></div>
       <div class="container module-container">
         <!-- Background Curve -->
@@ -299,24 +299,18 @@
         <div class="relative z-10">
           <!-- Heading -->
           <div class="text-center mb-14">
-            <h2
-              class="font-extrabold leading-tight xs:text-2xl md:text-4xl lg:text-6xl font-Inter"
-            >
+            <h2 class="header-text">
               Here Will Be
               <span class="text-[#DF3636] italic">Course Module</span>
             </h2>
             <p
-              class="text-xs xs:text-base md:text-lg font-Roboto text-secondary"
+              class="titel-text "
             >
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
             </p>
           </div>
 
-          <!-- Modules Grid -->
-
-          <!-- Expanded Red -->
-          <!-- From Uiverse.io by SivarajRathinam -->
           <div class="grid gap-5 accordion sm:grid-cols-2">
             <div class="border-red-300 accordion-item">
               <div class="accordion-header">
@@ -448,7 +442,7 @@
 
       <!-- Eye Catchy Banner -->
       <div
-        class="relative flex items-center justify-center w-full h-64 overflow-hidden text-center bg-center bg-cover sm:h-80 md:h-96"
+        class="relative flex items-center justify-center w-full h-40 overflow-hidden text-center bg-center bg-cover sm:h-80 md:h-96"
         style="
           background-image: url(&quot;./images/graphic_design_banner.png&quot;);
         "
@@ -456,7 +450,7 @@
         <div class="absolute inset-0 bg-black/40"></div>
 
         <div class="relative z-10 px-4">
-          <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+          <h2 class="text-xl font-bold text-white sm:text-3xl md:text-4xl">
             Eye Catchy Graphic Design Banner
           </h2>
         </div>
@@ -471,9 +465,7 @@
       <div class="container px-4 mx-auto">
         <!-- Header -->
         <div class="text-center w-full lg:w-[75%] mx-auto mb-12">
-          <h1
-            class="text-2xl md:text-4xl lg:text-[56px] font-Inter font-extrabold leading-[120%] text-[#1E1E1F] mb-4"
-          >
+          <h1 class="header-text">
             An exciting
             <i class="text-[#DF3636] font-extrabold">Journey Roadmap</i>
           </h1>
@@ -487,74 +479,119 @@
 
         <!-- Grid -->
         <!-- Row 1 -->
-<div class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-3 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-3 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="p-6 bg-white shadow-lg card before:from-blue-500">
+            <div class="flex items-center md:mb-1 lg:mb-4">
+              <div
+                class="w-14 h-14 bg-[#F1F5FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#4285FA]"
+              >
+                1
+              </div>
+              <div
+                class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#4285FA] to-transparent rounded"
+              ></div>
+            </div>
+            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+              Journey Title will be here
+            </h4>
+            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam.
+            </p>
+          </div>
 
-  <!-- Card 1 -->
-  <div class=" p-6 border-t-2 border-l-2 rounded-[20px] border-[#5B8FFF] shadow-lg bg-white">
-    <div class="flex items-center md:mb-1 lg:mb-4">
-      <div class="w-14 h-14 bg-[#F1F5FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#4285FA]">1</div>
-      <div class="flex-1 h-1  bg-gradient-to-r from-[#4285FA] to-transparent rounded"></div>
-    </div>
-    <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
-    <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-      Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam.
-    </p>
-  </div>
+          <!-- Card 2 -->
+          <div class="card p-6 before:from-[#34A853] shadow-lg bg-white">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-14 h-14 bg-[#EFF8F2] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#34A853]"
+              >
+                2
+              </div>
+              <div
+                class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#34A853] to-transparent rounded"
+              ></div>
+            </div>
+            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+              Journey Title will be here
+            </h4>
+            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam.
+            </p>
+          </div>
 
-  <!-- Card 2 -->
-  <div class="p-6 border-b-2 border-l-2 rounded-[20px] border-[#34A853] shadow-lg bg-white">
-    <div class="flex items-center mb-4">
-      <div class="w-14 h-14 bg-[#EFF8F2] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#34A853]">2</div>
-      <div class="flex-1 h-1  bg-gradient-to-r from-[#34A853] to-transparent rounded"></div>
-    </div>
-    <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
-    <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-      Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam.
-    </p>
-  </div>
+          <!-- Card 3 -->
+          <div class="card p-6 before:from-[#F88513] shadow-lg bg-white">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-14 h-14 bg-[#FDF5E6] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#F88513]"
+              >
+                3
+              </div>
+              <div
+                class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#F88513] to-transparent rounded"
+              ></div>
+            </div>
+            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+              Journey Title will be here
+            </h4>
+            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam.
+            </p>
+          </div>
+        </div>
 
-  <!-- Card 3 -->
-  <div class="p-6 border-t-2 border-r-2 rounded-[20px] border-[#F88513] shadow-lg bg-white">
-    <div class="flex items-center mb-4">
-      <div class="w-14 h-14 bg-[#FDF5E6] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#F88513]">3</div>
-      <div class="flex-1 h-1  bg-gradient-to-r from-[#F88513] to-transparent rounded"></div>
-    </div>
-    <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
-    <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-      Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam.
-    </p>
-  </div>
+        <!-- Row 2 -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <!-- Card 4 -->
+          <div
+            class="card p-6 2 rounded-[20px] before:from-[#DF3636] shadow-lg bg-white"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-14 h-14 bg-[#FFE9E9] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#DF3636]"
+              >
+                4
+              </div>
+              <div
+                class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#DF3636] to-transparent rounded"
+              ></div>
+            </div>
+            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+              Journey Title will be here
+            </h4>
+            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam.
+            </p>
+          </div>
 
-</div>
-
-<!-- Row 2 -->
-<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-
-  <!-- Card 4 -->
-  <div class="p-6 border-b-2 border-l-2 rounded-[20px] border-[#DF3636] shadow-lg bg-white">
-    <div class="flex items-center mb-4">
-      <div class="w-14 h-14 bg-[#FFE9E9] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#DF3636]">4</div>
-      <div class="flex-1 h-1  bg-gradient-to-r from-[#DF3636] to-transparent rounded"></div>
-    </div>
-    <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
-    <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-      Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam.
-    </p>
-  </div>
-
-  <!-- Card 5 -->
-  <div class="p-6 border-b-2 border-r-2 rounded-[20px] border-[#7451FD] shadow-lg bg-white">
-    <div class="flex items-center mb-4">
-      <div class="w-14 h-14 bg-[#F4F1FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#7451FD]">5</div>
-      <div class="flex-1 h-1  bg-gradient-to-r from-[#7451FD] to-transparent rounded"></div>
-    </div>
-    <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
-    <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-      Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam.
-    </p>
-  </div>
-
-</div>
+          <!-- Card 5 -->
+          <div
+            class="card p-6 rounded-[20px] before:from-[#7451FD] shadow-lg bg-white"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-14 h-14 bg-[#F4F1FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#7451FD]"
+              >
+                5
+              </div>
+              <div
+                class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#7451FD] to-transparent rounded"
+              ></div>
+            </div>
+            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+              Journey Title will be here
+            </h4>
+            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -562,11 +599,11 @@
 
     <section class="px-4 py-16 mx-auto sm:px-6 lg:px-12 max-w-305">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold sm:text-4xl lg:text-6xl">
+        <h2 class="header-text">
           Projects of
           <span class="text-[#DF3636] italic">Our Students</span>
         </h2>
-        <p class="mt-4 text-gray-400 text-l">
+        <p class="title-text">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
           nunc sodales arcu mi ut volutpat lobortis.
@@ -664,14 +701,14 @@
       </div>
     </section>
 
-    <section class="max-w-6xl px-4 py-16 mx-auto">
+    <section class="px-4 py-16 mx-auto overflow-x-clip">
       <!-- Heading -->
       <div class="mb-10 text-center">
-        <h2 class="mb-3 text-3xl font-bold text-gray-900 md:text-4xl">
+        <h2 class="header-text">
           Our Students
           <span class="italic text-red-500">Shared Their Stories</span>
         </h2>
-        <p class="max-w-xl mx-auto text-sm leading-relaxed text-gray-500">
+        <p class="title-text">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
           nunc sodales arcu mi ut volutpat lobortis.
@@ -684,11 +721,11 @@
           <!-- Slide 1 -->
           <div class="swiper-slide">
             <div
-              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
+              class="flex flex-row overflow-hidden shadow-md bg-blue-50 rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo -->
-              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
@@ -718,7 +755,6 @@
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                    consectetur. nisi donec neque ut mauris nulla eros.
                   </p>
                 </div>
 
@@ -732,11 +768,11 @@
           </div>
           <div class="swiper-slide">
             <div
-              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
+              class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo-->
-              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
@@ -766,7 +802,6 @@
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                    consectetur. nisi donec neque ut mauris nulla eros.
                   </p>
                 </div>
 
@@ -780,11 +815,11 @@
           </div>
           <div class="swiper-slide">
             <div
-              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
+              class="flex flex-row overflow-hidden shadow-md bg-green-50 rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo -->
-              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
@@ -814,7 +849,6 @@
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                    consectetur. nisi donec neque ut mauris nulla eros.
                   </p>
                 </div>
 
@@ -828,11 +862,11 @@
           </div>
           <div class="swiper-slide">
             <div
-              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
+              class="flex flex-row overflow-hidden shadow-md bg-yellow-50 rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo-->
-              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
@@ -862,7 +896,100 @@
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                    consectetur. nisi donec neque ut mauris nulla eros.
+                  </p>
+                </div>
+
+                <!-- Name & Batch -->
+                <div>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-row overflow-hidden shadow-md bg-orange-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+            >
+              <!-- Photo-->
+              <div class="w-1/3 py-3 pl-2 aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                  alt="Mahamud Azim"
+                  class="object-cover w-full h-full rounded-xl"
+                />
+              </div>
+
+              <!-- Content RIGHT -->
+              <div
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
+              >
+                <!-- Stars -->
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="text-base font-bold text-gray-800">5.0</span>
+                    <div class="flex gap-0.5 text-amber-400 text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <!-- Review Text -->
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi
+                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                  </p>
+                </div>
+
+                <!-- Name & Batch -->
+                <div>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+            >
+              <!-- Photo-->
+              <div class="w-1/3 py-3 pl-2 aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                  alt="Mahamud Azim"
+                  class="object-cover w-full h-full rounded-xl"
+                />
+              </div>
+
+              <!-- Content RIGHT -->
+              <div
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
+              >
+                <!-- Stars -->
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="text-base font-bold text-gray-800">5.0</span>
+                    <div class="flex gap-0.5 text-amber-400 text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <!-- Review Text -->
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi
+                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
                   </p>
                 </div>
 
@@ -881,7 +1008,7 @@
 
     <!-- career section start (Hamim) -->
     <section
-      class="items-center mb-10 bg-center bg-no-repeat bg-cover"
+      class="items-center my-1 mb-10 bg-center bg-no-repeat bg-cover"
       style="background-image: url(&quot;./images/career-background.png&quot;)"
     >
       <div
@@ -892,13 +1019,13 @@
         >
           <div class="">
             <h1
-              class="text-4xl font-bold leading-[120%] text-[#1E1E1F] lg:text-[56px]"
+              class="text-4xl font-bold leading-tight text-gray-800 lg:text-5xl font-Inter"
             >
               Ready To <br />
               <span class="italic text-[#DF3636]">Start Your Career</span>
             </h1>
 
-            <p class="mt-6 text-[18px] leading-[150%] text-[#38435C] font-Roboto font-normal ">
+            <p class="mt-6 leading-relaxed text-gray-600 font-Roboto">
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
               Egestas sed nunc sodales arcu mi ut volutpat lobortis.
@@ -922,7 +1049,7 @@
           </div>
 
           <div
-            class="w-full p-8 mx-auto bg-white shadow-xl sm:w-4/5 lg:max-w-md animated-border-box rounded-2xl lg:mx-0"
+            class="w-full p-8 mx-auto bg-white shadow-xl sm:w-4/5 lg:max-w-md animated-border-box rounded-2xl lg:mx-0 font-Inter"
           >
             <div class="bg-white rounded-[21px] p-8">
               <h2 class="text-2xl font-semibold text-center text-gray-800">
@@ -998,8 +1125,8 @@
         />
 
         <div class="faq-header">
-          <h1 class="faq-title">Frequently Asked <em>Questions</em></h1>
-          <p class="faq-subtitle">
+          <h1 class="header-text">Frequently Asked <em>Questions</em></h1>
+          <p class="titele-text">
             Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
             est at non suscipit. Felis posuere maecenas interdum sit cras.
             Egestas sed nunc sodales arcu mi ut volutpat lobortis.
@@ -1087,7 +1214,7 @@
     </section>
 
     <!-- Frequently asked Questions end-->
-     
+
     <footer class="bg-[#2c1b1b] rounded-t-4xl xl:rounded-t-[100px] pt-16 pb-10">
       <div class="container flex flex-col gap-y-16">
         <div
@@ -1234,7 +1361,28 @@
     <script type="module" src="./script.js"></script>
     <script>
       function toggleFaq(el) {
-        el.classList.toggle("open");
+        const answer = el.querySelector(".faq-answer");
+
+        if (el.classList.contains("open")) {
+          answer.style.maxHeight = null;
+          el.classList.remove("open");
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          el.classList.add("open");
+        }
+      }
+
+      function playVideo(el) {
+        el.innerHTML = `
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://www.youtube.com/embed/pfu0Ab_FASk?autoplay=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+  `;
       }
     </script>
   </body>
