@@ -14,4 +14,18 @@ closeMenu.addEventListener("click", () => {
   navMenu.classList.remove("translate-y-0");
   navMenu.classList.add("-translate-y-full");
 });
-
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
+function toggleFaq(el) {
+  el.classList.toggle("open");
+}

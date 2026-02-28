@@ -2,7 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -21,7 +31,9 @@
   <body>
     <header id="heder" class="">
       <!-- al mahmud -->
-      <nav class="relative">
+      <nav
+        class="relative bg-white shadow-[0px_4px_20px_rgba(201,201,201,0.25)]"
+      >
         <div class="container py-4">
           <div class="flex items-center justify-between">
             <div class="max-w-[25%]">
@@ -225,20 +237,24 @@
       </div>
     </section>
 
-    <section class="py-10 font-Inter">
+    <section class="py-10 font-Inter relative overflow-clip">
+      <div
+        class="absolute w-[200%] top-1/12 left-1/2 -translate-x-1/2 aspect-2/1 bg-gradient-to-t from-white from-90% to-[#fbdcdc] rounded-t-full z-0"
+      ></div>
       <div class="module-container container">
         <!-- Background Curve -->
-        <div class="module-bg-curve"></div>
 
         <div class="relative z-10">
           <!-- Heading -->
           <div class="text-center mb-14">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+            <h2
+              class="xs:text-2xl md:text-4xl text-[56px] leading-tight font-Inter font-extrabold"
+            >
               Here Will Be
-              <span class="text-[#DF3636]">Course Module</span>
+              <span class="text-[#DF3636] italic">Course Module</span>
             </h2>
             <p
-              class="mt-4 text-gray-500 max-w-2xl mx-auto text-sm md:text-base"
+              class="text-xs xs:text-base md:text-lg font-Roboto text-secondary"
             >
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
@@ -246,86 +262,243 @@
           </div>
 
           <!-- Modules Grid -->
-          <div class="grid md:grid-cols-2 gap-6">
+          <div class="">
             <!-- Expanded Red -->
-            <div class="module-card-expanded module-red">
-              <div class="module-card-header">
-                <div class="module-card-title-wrap">
-                  <div class="module-icon">P</div>
-                  <h4 class="module-title">Module title will be here</h4>
+            <!-- From Uiverse.io by SivarajRathinam -->
+            <div class="accordion grid md:grid-cols-2 gap-6">
+              <div class="accordion-item">
+                <input type="radio" id="section1" name="accordion" />
+                <label for="section1" class="accordion-header">
+                  <label class="accordion-title" for="section1">
+                    <img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
                 </div>
-                <span class="text-gray-500 text-lg">
-                  <i class="fa-solid fa-angle-up"></i>
-                </span>
               </div>
-              <p class="module-description">
-                Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis
-                velit.
-              </p>
-            </div>
-
-            <!-- Expanded Blue -->
-            <div class="module-card-expanded module-blue">
-              <div class="module-card-header">
-                <div class="module-card-title-wrap">
-                  <div class="module-icon">P</div>
-                  <h4 class="module-title">Module title will be here</h4>
+              <div class="accordion-item">
+                <input type="radio" id="section1" name="accordion" />
+                <label for="section1" class="accordion-header">
+                  <label class="accordion-title" for="section1"
+                    ><img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="module-description">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
                 </div>
-                <span class="text-gray-500 text-lg">
-                  <i class="fa-solid fa-angle-up"></i>
-                </span>
               </div>
-              <p class="module-description">
-                Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                adipiscing sed mauris sapien.
-              </p>
-            </div>
-
-            <!-- Collapsed Green -->
-            <div class="module-card-collapsed module-green">
-              <div class="module-card-title-wrap">
-                <div class="module-icon">P</div>
-                <h4 class="module-title">Module title will be here</h4>
+              <div class="accordion-item">
+                <input type="radio" id="section2" name="accordion" />
+                <label for="section2" class="accordion-header">
+                  <label class="accordion-title" for="section2"
+                    ><img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="module-description">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
+                </div>
               </div>
-              <span class="text-gray-500 text-lg">
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
-            </div>
-
-            <!-- Collapsed Orange -->
-            <div class="module-card-collapsed module-orange">
-              <div class="module-card-title-wrap">
-                <div class="module-icon">P</div>
-                <h4 class="module-title">Module title will be here</h4>
+              <div class="accordion-item">
+                <input type="radio" id="section2" name="accordion" />
+                <label for="section2" class="accordion-header">
+                  <label class="accordion-title" for="section2"
+                    ><img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="module-description">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
+                </div>
               </div>
-              <span class="text-gray-500 text-lg">
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
-            </div>
-
-            <!-- Collapsed Red -->
-            <div class="module-card-collapsed module-red">
-              <div class="module-card-title-wrap">
-                <div class="module-icon">P</div>
-                <h4 class="module-title">Module title will be here</h4>
+              <div class="accordion-item">
+                <input type="radio" id="section2" name="accordion" />
+                <label for="section2" class="accordion-header">
+                  <label class="accordion-title" for="section2"
+                    ><img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="module-description">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
+                </div>
               </div>
-              <span class="text-gray-500 text-lg">
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
-            </div>
-
-            <!-- Collapsed Blue -->
-            <div class="module-card-collapsed module-blue">
-              <div class="module-card-title-wrap">
-                <div class="module-icon">P</div>
-                <h4 class="module-title">Module title will be here</h4>
+              <div class="accordion-item">
+                <input type="radio" id="section2" name="accordion" />
+                <label for="section2" class="accordion-header">
+                  <label class="accordion-title" for="section2"
+                    ><img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="module-description">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
+                </div>
               </div>
-              <span class="text-gray-500 text-lg">
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
+              <div class="accordion-item">
+                <input type="radio" id="section2" name="accordion" />
+                <label for="section2" class="accordion-header">
+                  <label class="accordion-title" for="section2"
+                    ><img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="module-description">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <input type="radio" id="section2" name="accordion" />
+                <label for="section2" class="accordion-header">
+                  <label class="accordion-title" for="section2"
+                    ><img src="./images/msgRed.png" alt="msg" />
+                    <h1>Module title will be here</h1></label
+                  >
+                  <div class="accordion-icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="content">
+                  <p class="module-description">
+                    Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                    adipiscing sed mauris sapien.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
 
           <!-- Load More Button -->
           <div class="text-center mt-12">
@@ -356,9 +529,7 @@
     <!--  Journey_Roadmap / JIHAD  -->
     <section
       class="py-8 sm:py-12 md:py-16 lg:py-24 xl:py-32 bg-cover bg-bottom bg-no-repeat"
-      style="
-        background-image: url(&quot;./images/cardBg.png&quot;);
-      "
+      style="background-image: url(&quot;./images/cardBg.png&quot;)"
     >
       <div class="container mx-auto px-4">
         <!-- Header -->
@@ -603,14 +774,229 @@
       </div>
     </section>
 
-    <section><!-- sk omar --></section>
+       <section class="py-16 px-4 max-w-6xl mx-auto">
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          Our Students
+          <span class="text-red-500 italic">Shared Their Stories</span>
+        </h2>
+        <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
+          at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
+          nunc sodales arcu mi ut volutpat lobortis.
+        </p>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row "
+              style="border: 1.5px solid #e0eef8; height: 200px"
+            >
+              <!-- Photo -->
+              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+                <img
+                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                  alt="Mahamud Azim"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+
+              <!-- Content RIGHT -->
+              <div
+                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+              >
+                <!-- Stars -->
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <div class="flex gap-0.5 text-amber-400 text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <!-- Review Text -->
+                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi
+                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                    consectetur. nisi donec neque ut mauris nulla eros.
+                  </p>
+                </div>
+
+                <!-- Name & Batch -->
+                <div>
+                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
+                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+            >
+              <!-- Photo-->
+              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+                <img
+                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                  alt="Mahamud Azim"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+
+              <!-- Content RIGHT -->
+              <div
+                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+              >
+                <!-- Stars -->
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <div class="flex gap-0.5 text-amber-400 text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <!-- Review Text -->
+                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi
+                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                    consectetur. nisi donec neque ut mauris nulla eros.
+                  </p>
+                </div>
+
+                <!-- Name & Batch -->
+                <div>
+                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
+                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row "
+              style="border: 1.5px solid #e0eef8; height: 200px"
+            >
+              <!-- Photo -->
+              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+                <img
+                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                  alt="Mahamud Azim"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+
+              <!-- Content RIGHT -->
+              <div
+                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+              >
+                <!-- Stars -->
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <div class="flex gap-0.5 text-amber-400 text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <!-- Review Text -->
+                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi
+                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                    consectetur. nisi donec neque ut mauris nulla eros.
+                  </p>
+                </div>
+
+                <!-- Name & Batch -->
+                <div>
+                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
+                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+            >
+              <!-- Photo-->
+              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+                <img
+                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                  alt="Mahamud Azim"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+
+              <!-- Content RIGHT -->
+              <div
+                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+              >
+                <!-- Stars -->
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <div class="flex gap-0.5 text-amber-400 text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <!-- Review Text -->
+                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi
+                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                    consectetur. nisi donec neque ut mauris nulla eros.
+                  </p>
+                </div>
+
+                <!-- Name & Batch -->
+                <div>
+                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
+                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <!-- career section start (Hamim) -->
     <section
       class="items-center mb-10 bg-no-repeat bg-cover bg-center"
       style="background-image: url(&quot;./images/career-background.png&quot;)"
     >
-      <div class="container border-2 border-primary rounded-2xl py-16 px-4">
+      <div
+        class="container border-2 border-primary bg-white rounded-2xl py-16 px-4 shadow-[0px_4px_40px_0px_rgba(216,108,108,0.25)]"
+      >
         <div
           class="lg:pl-15 text-start grid lg:grid-cols-2 gap-12 items-center"
         >
@@ -814,7 +1200,7 @@
     <footer class="bg-[#2c1b1b] rounded-t-4xl xl:rounded-t-[100px] pt-16 pb-10">
       <div class="container flex flex-col gap-y-16">
         <div
-          class="flex flex-col items-center justify-between border top-footer lg:flex-row gap-y-16"
+          class="flex flex-col items-center justify-between top-footer lg:flex-row gap-y-16"
         >
           <img src="./images/footer-logo.png" alt="logo" />
           <div class="flex flex-col items-center gap-2 text-center quires">
@@ -953,12 +1339,8 @@
         </div>
       </div>
     </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="./script.js"></script>
-    <script>
-      function toggleFaq(el) {
-        el.classList.toggle("open");
-      }
-    </script>
+   
   </body>
 </html>

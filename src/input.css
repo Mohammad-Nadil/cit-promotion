@@ -43,6 +43,27 @@ ul li .nav-item:hover {
   gap: 4px;
   cursor: pointer;
 }
+
+.swiper {
+  width: 100%;
+  padding-bottom: 50px !important;
+}
+.swiper-pagination-bullet {
+  background: #f9a8a8;
+  opacity: 1;
+  width: 32px;
+  height: 8px;
+  border-radius: 4px;
+}
+.swiper-pagination-bullet-active {
+  background: #e53e3e;
+  width: 32px;
+  height: 8px;
+  border-radius: 4px;
+}
+.star {
+  color: #f59e0b;
+}
 /* Hero section */
 @layer components {
   /* Hero Section Main Wrapper */
@@ -331,57 +352,6 @@ ul li .nav-item:hover {
     padding: 6px 12px;
   }
 }
-/* From Uiverse.io by SivarajRathinam */
-.accordion {
-  width: 300px;
-  margin: 0 auto;
-}
-
-.accordion-item {
-  margin-bottom: 5px;
-}
-
-.accordion-item .content {
-  font-size: 12px;
-}
-
-.accordion input[type="radio"] {
-  display: none;
-}
-
-.accordion .content {
-  height: 0px;
-  padding: 0px;
-  background-color: #fafafa;
-  border-top: 1px solid #ccc;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-.accordion input[type="radio"]:checked + .accordion-header + .content {
-  height: auto;
-  padding: 15px;
-}
-.accordion-icon {
-  display: flex;
-  align-items: center;
-  transition: all 0.5s ease;
-}
-.accordion input[type="radio"]:checked + .accordion-header .accordion-icon {
-  transform: rotate(180deg);
-}
-.accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-weight: bold;
-  text-align: left;
-}
-.accordion-header .accordion-title {
-  font-size: 14px;
-}
 
 /* ===================================
    Course Module Section
@@ -389,13 +359,6 @@ ul li .nav-item:hover {
 
 .module-container {
   @apply relative overflow-hidden lg:pt-40 pt-24 md:pt-32 pb-20;
-}
-
-/* Background curve */
-.module-bg-curve {
-  @apply absolute top-0 left-1/2 -translate-x-1/2 w-full h-full
-         bg-gradient-to-t from-white from-90% md:from-90% lg:from-80%
-         to-[#fbdcdc] rounded-t-full z-0;
 }
 
 /* Expanded Card */
@@ -423,43 +386,9 @@ ul li .nav-item:hover {
   @apply w-8 h-8 flex items-center justify-center rounded-md;
 }
 
-/* Title */
-.module-title {
-  @apply font-semibold text-gray-800;
-}
-
 /* Description */
 .module-description {
   @apply text-sm text-gray-600 mt-4 leading-relaxed;
-}
-
-/* Color Variants */
-.module-red {
-  @apply border-red-300;
-}
-.module-red .module-icon {
-  @apply bg-red-100 text-red-500;
-}
-
-.module-blue {
-  @apply border-blue-300;
-}
-.module-blue .module-icon {
-  @apply bg-blue-100 text-blue-500;
-}
-
-.module-green {
-  @apply border-green-300;
-}
-.module-green .module-icon {
-  @apply bg-green-100 text-green-500;
-}
-
-.module-orange {
-  @apply border-orange-300;
-}
-.module-orange .module-icon {
-  @apply bg-orange-100 text-orange-500;
 }
 
 /* Button */
@@ -472,16 +401,24 @@ ul li .nav-item:hover {
 
 /* From Uiverse.io by SivarajRathinam */
 .accordion {
-  width: 300px;
-  margin: 0 auto;
+  @apply w-full;
 }
 
 .accordion-item {
-  margin-bottom: 5px;
+  @apply w-full bg-white rounded-lg border p-4;
+}
+.accordion-title {
+  @apply flex items-center gap-2;
+}
+.accordion-header {
+  @apply flex justify-between items-center;
+}
+.accordion-header h1 {
+  @apply text-lg font-semibold font-Roboto;
 }
 
-.accordion-item .content {
-  font-size: 12px;
+.accordion-item .content p {
+  @apply text-sm font-Roboto text-black  p-0!;
 }
 
 .accordion input[type="radio"] {
@@ -491,14 +428,11 @@ ul li .nav-item:hover {
 .accordion .content {
   height: 0px;
   padding: 0px;
-  background-color: #fafafa;
-  border-top: 1px solid #ccc;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 .accordion input[type="radio"]:checked + .accordion-header + .content {
-  height: auto;
-  padding: 15px;
+  @apply h-auto px-4 py-1;
 }
 .accordion-icon {
   display: flex;
@@ -507,19 +441,6 @@ ul li .nav-item:hover {
 }
 .accordion input[type="radio"]:checked + .accordion-header .accordion-icon {
   transform: rotate(180deg);
-}
-.accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-weight: bold;
-  text-align: left;
-}
-.accordion-header .accordion-title {
-  font-size: 14px;
 }
 
 @layer footer {
