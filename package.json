@@ -8,8 +8,7 @@
     "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.1",
-    "tailwindcss": "^4.2.1"
+    "@tailwindcss/cli": "^4.2.1"
   },
   "devDependencies": {
     "live-server": "^1.2.2",
