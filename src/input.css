@@ -539,6 +539,7 @@ ul li .nav-item:hover {
   border: 1px solid var(--rose-border);
   border-radius: 1rem;
   padding: 1.25rem 1.5rem;
+  transition: all .4s;
   cursor: pointer;
   transition:
     border-color 0.3s,
