@@ -29,22 +29,30 @@ const swiper = new Swiper(".mySwiper", {
     1536: { slidesPerView: 4 },
   },
 });
-
 const items = document.querySelectorAll(".accordion-item");
 
+// প্রথমটা default open
 if (items.length > 0) {
   items[0].classList.add("active");
 }
 
 items.forEach((item) => {
-  item.querySelector(".accordion-header").addEventListener("click", () => {
+
+  // এখন পুরো accordion-item এ click হবে
+  item.addEventListener("click", () => {
     const isActive = item.classList.contains("active");
+
+    // আগে সব close
     items.forEach((i) => i.classList.remove("active"));
+
+    // যদি আগেই active থাকে → close থাকবে
     if (isActive) return;
+
+    // এখন current item open
     item.classList.add("active");
   });
-});
 
+});
 const faqItems = document.querySelectorAll(".faq-item");
 
 // প্রথমটা default open থাকবে
