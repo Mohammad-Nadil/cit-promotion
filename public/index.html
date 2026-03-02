@@ -1,350 +1,275 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header id="heder" class="">
-      <!-- al mahmud -->
-      <nav
-        class="relative bg-white shadow-[0px_4px_20px_rgba(201,201,201,0.25)]"
-      >
-        <div class="container py-4">
-          <div class="flex items-center justify-between">
-            <div class="max-w-[25%]">
-              <img src="./images/navlogo.png" alt="Navber Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="heder" class="">
+    <!-- al mahmud -->
+    <nav class="relative bg-white shadow-[0px_4px_20px_rgba(201,201,201,0.25)]">
+      <div class="container py-4">
+        <div class="flex items-center justify-between">
+          <div class="max-w-[25%]">
+            <img src="./images/navlogo.png" alt="Navber Logo" />
+          </div>
+
+          <div id="nav-menu"
+            class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 md:static md:flex-row md:translate-y-0 md:bg-transparent md:max-w-[55%] md:justify-end">
+            <div id="close-menu" class="absolute text-2xl cursor-pointer top-6 right-6 md:hidden">
+              <i class="fa-solid fa-xmark"></i>
             </div>
 
-            <div
-              id="nav-menu"
-              class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 md:static md:flex-row md:translate-y-0 md:bg-transparent md:max-w-[55%] md:justify-end"
-            >
-              <div
-                id="close-menu"
-                class="absolute text-2xl cursor-pointer top-6 right-6 md:hidden"
-              >
-                <i class="fa-solid fa-xmark"></i>
-              </div>
+            <ul class="flex flex-col items-center gap-10 md:flex-row">
+              <li><a href="#" class="nav-item">Home</a></li>
+              <li><a href="#" class="nav-item">About</a></li>
+              <li><a href="#" class="nav-item">Course</a></li>
+              <li><a href="#" class="nav-item">Blog</a></li>
+              <li><a href="#" class="nav-item">FAQ</a></li>
+            </ul>
 
-              <ul class="flex flex-col items-center gap-10 md:flex-row">
-                <li><a href="#" class="nav-item">Home</a></li>
-                <li><a href="#" class="nav-item">About</a></li>
-                <li><a href="#" class="nav-item">Course</a></li>
-                <li><a href="#" class="nav-item">Blog</a></li>
-                <li><a href="#" class="nav-item">FAQ</a></li>
-              </ul>
-
-              <div class="md:hidden">
-                <button class="btn">
-                  Get Enroll <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="hidden md:block max-w-[20%]">
+            <div class="md:hidden">
               <button class="btn">
                 Get Enroll <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
+          </div>
 
-            <div id="open-menu" class="text-2xl cursor-pointer md:hidden">
-              <i class="fa-solid fa-bars-staggered"></i>
-            </div>
+          <div class="hidden md:block max-w-[20%]">
+            <button class="btn">
+              Get Enroll <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div id="open-menu" class="text-2xl cursor-pointer md:hidden">
+            <i class="fa-solid fa-bars-staggered"></i>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section
-        class="bg-no-repeat bg-cover hero-section"
-        style="background-image: url(&quot;./images/Hero.png&quot;)"
-      >
-        <div class="container">
-          <div class="items-center hero-flex">
-            <div class="hero-left">
-              <span class="top-tittle">
-                <img src="./images/fire.png" alt="fire" />
-                Some overline text will be here with excitement
-              </span>
-
-              <h1 class="Hero-title">
-                Title will be here
-                <span class="Hero-title1">Graphics Design</span>
-              </h1>
-
-              <div class="Hero-ctabtn">
-                <button class="cta-small green">
-                  CTA Label
-                  <img src="./images/Hero/hero-btn1.png" alt="" />
-                </button>
-                <button class="cta-small orange">
-                  CTA Label
-                  <img src="./images/Hero/hero-btn2.png" alt="" />
-                </button>
-                <button class="cta-small red">
-                  CTA Label
-                  <img src="./images/Hero/hero-btn3.png" alt="" />
-                </button>
-              </div>
-
-              <p class="Hero-description">
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit. Felis posuere maecenas interdum sit
-                cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-                Diam diam tellus ultricies. Lorem ipsum dolor sit amet
-                consectetur. Orci est elit tincidunt eu est at non suscipit.
-                Felis posuere maecenas interdum sit cras.
-              </p>
-
-              <div class="flex-buttons">
-                <button
-                  class="bg-[#DF3636] rounded-[10px] flex items-center gap-2 py-4.25 px-4 font-Roboto font-medium text-[18px] leading-[120%] text-white "
-                >
-                  CTA Label Here
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12 6L16 12L21 8L19 18H5L3 8L8 12L12 6Z"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-                <button class="btn-secondary">
-                  Download Curriculum
-                  <img src="./images/Hero/hero-btn4.png" alt="" />
-                </button>
-              </div>
-            </div>
-
-            <div class="hero-right">
-              <div class="animated-border-box">
-                <div class="form-content">
-                  <h2 class="text-center form-title">Book Your Seat Now</h2>
-                  <p class="text-center form-subtitle">
-                    Start building your professional career for free
-                  </p>
-
-                  <div class="input-group">
-                    <label>Your Full Name</label>
-                    <div
-                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                    >
-                      <i class="fa-regular fa-user"></i>
-                      <input type="text" placeholder="Enter Here" />
-                    </div>
-                  </div>
-
-                  <div class="input-group">
-                    <label>Email Address</label>
-                    <div
-                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                    >
-                      <i class="fa-regular fa-envelope"></i>
-                      <input type="email" placeholder="Enter Here" />
-                    </div>
-                  </div>
-
-                  <div class="input-group">
-                    <label>Phone Number</label>
-                    <div
-                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                    >
-                      <i class="fa-solid fa-phone-volume"></i>
-                      <input type="tel" placeholder="Enter Here" />
-                    </div>
-                  </div>
-                  <div class="input-group">
-                    <label>Career Goals</label>
-                    <div
-                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                    >
-                      <i class="fa-solid fa-award"></i>
-                      <input type="tel" placeholder="Enter Here" />
-                    </div>
-                  </div>
-
-                  <button class="submit-btn">
-                    CTA Label Here <span>&rarr;</span>
-                  </button>
-
-                  <p class="footer-text">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <section class="relative overflow-clip">
-      <img
-        class="absolute hidden object-contain h-full max-w-full md:block top-1/2 left-1/2 -translate-1/2 3xl:w-400 -z-10"
-        src="./images/round.png"
-        alt=""
-      />
-      <div class="container py-13 md:py-27">
-        <div
-          class="flex flex-col md:flex-row gap-[8px] md:gap-[16px] justify-center text-center md:text-left"
-        >
-          <h1 class="header-text">
-            Here Will Be
-
-            <span
-              class="font-Inter italic font-extrabold leading-[120%] text-[#DF3636]"
-            >
-              Promotion Video
+    <section class="bg-no-repeat bg-cover hero-section" style="background-image: url(&quot;./images/Hero.png&quot;)">
+      <div class="container">
+        <div class="items-center hero-flex">
+          <div class="hero-left">
+            <span class="top-tittle">
+              <img src="./images/fire.png" alt="fire" />
+              Some overline text will be here with excitement
             </span>
-          </h1>
-        </div>
-        <p class="pb-10 title-text md:pb-16">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
-          at non suscipit. Felis posuere <br class="hidden md:block" />
-          maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut
-          volutpat lobortis.
-        </p>
 
-        <div class="relative flex items-center justify-center">
-          <div
-            class="w-4/5 border-2 xl:w-full mask-auto aspect-video rounded-xl border-primary/40"
-          >
-            <div
-              class="relative w-full h-full video-thumbnail"
-              onclick="playVideo(this)"
-            >
-              <img
-              class="rounded-xl"
-                src="https://img.youtube.com/vi/pfu0Ab_FASk/maxresdefault.jpg"
-                alt="Video Thumbnail"
-              />
+            <h1 class="Hero-title">
+              Title will be here
+              <span class="Hero-title1">Graphics Design</span>
+            </h1>
 
-              <div
-                class="absolute w-12 text-red-500 cursor-pointer custom-play top-1/2 left-1/2 -translate-1/2 sm:w-16 aspect-square"
-              >
-                <span
-                  class="absolute z-0 inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-primary"
-                ></span>
-                <div
-                  class="relative z-10 flex items-center justify-center w-full h-full text-2xl bg-white rounded-full sm:text-3xl aspect-square"
-                >
-                  <i class="fa-solid fa-play"></i>
+            <div class="Hero-ctabtn">
+              <button class="cta-small green">
+                CTA Label
+                <img src="./images/Hero/hero-btn1.png" alt="" />
+              </button>
+              <button class="cta-small orange">
+                CTA Label
+                <img src="./images/Hero/hero-btn2.png" alt="" />
+              </button>
+              <button class="cta-small red">
+                CTA Label
+                <img src="./images/Hero/hero-btn3.png" alt="" />
+              </button>
+            </div>
+
+            <p class="Hero-description">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+              eu est at non suscipit. Felis posuere maecenas interdum sit
+              cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+              Diam diam tellus ultricies. Lorem ipsum dolor sit amet
+              consectetur. Orci est elit tincidunt eu est at non suscipit.
+              Felis posuere maecenas interdum sit cras.
+            </p>
+
+            <div class="flex-buttons">
+              <button
+                class="bg-[#DF3636] rounded-[10px] flex items-center gap-2 py-4.25 px-4 font-Roboto font-medium text-[18px] leading-[120%] text-white ">
+                CTA Label Here
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6L16 12L21 8L19 18H5L3 8L8 12L12 6Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn-secondary">
+                Download Curriculum
+                <img src="./images/Hero/hero-btn4.png" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="animated-border-box">
+              <div class="form-content">
+                <h2 class="text-center form-title">Book Your Seat Now</h2>
+                <p class="text-center form-subtitle">
+                  Start building your professional career for free
+                </p>
+
+                <div class="input-group">
+                  <label>Your Full Name</label>
+                  <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Enter Here" />
+                  </div>
                 </div>
+
+                <div class="input-group">
+                  <label>Email Address</label>
+                  <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter Here" />
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label>Phone Number</label>
+                  <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <input type="tel" placeholder="Enter Here" />
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label>Career Goals</label>
+                  <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                    <i class="fa-solid fa-award"></i>
+                    <input type="tel" placeholder="Enter Here" />
+                  </div>
+                </div>
+
+                <button class="submit-btn">
+                  CTA Label Here <span>&rarr;</span>
+                </button>
+
+                <p class="footer-text">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
               </div>
             </div>
-            <img
-              class="absolute object-contain h-full max-w-full top-1/2 left-1/2 md:hidden -translate-1/2 -z-10"
-              src="./images/round.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div
-          class="flex flex-col md:flex-row gap-[24px] items-start justify-between mt-[32px]"
-        >
-          <div>
-            <h2
-              class="font-Roboto font-semibold text-[18px] md:text-[20px] leading-[150%] text-[#38435C] capitalize"
-            >
-              Some text will be here
-            </h2>
-            <p
-              class="font-Roboto text-[14px] leading-[150%] text-[#38435C] mt-[8px]"
-            >
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="font-Roboto font-semibold text-[18px] md:text-[20px] leading-[150%] text-[#38435C] capitalize"
-            >
-              Some text will be here
-            </h2>
-            <p
-              class="font-Roboto text-[14px] leading-[150%] text-[#38435C] mt-[8px]"
-            >
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="font-Roboto font-semibold text-[18px] md:text-[20px] leading-[150%] text-[#38435C] capitalize"
-            >
-              Some text will be here
-            </h2>
-            <p
-              class="font-Roboto text-[14px] leading-[150%] text-[#38435C] mt-[8px]"
-            >
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
           </div>
         </div>
       </div>
     </section>
+  </header>
 
-    <section class="relative py-10 font-Inter overflow-clip">
-      <div
-        class="absolute w-[200%] top-1/12 left-1/2 -translate-y-[10%] sm:translate-y-0 -translate-x-1/2 aspect-video md:aspect-square sm:aspect-2/1 bg-linear-to-t from-white from-80% sm:from-90% to-[#fbdcdc] rounded-t-full z-0"
-      ></div>
-      <div class="container module-container">
-        <!-- Background Curve -->
+  <section class="relative overflow-clip">
+    <img
+      class="absolute hidden object-contain h-full max-w-full md:block top-1/2 left-1/2 -translate-1/2 3xl:w-400 -z-10"
+      src="./images/round.png" alt="" />
+    <div class="container py-13 md:py-27">
+      <div class="flex flex-col md:flex-row gap-[8px] md:gap-[16px] justify-center text-center md:text-left">
+        <h1 class="header-text">
+          Here Will Be
 
-        <div class="relative z-10">
-          <!-- Heading -->
-          <div class="text-center mb-14">
-            <h2 class="header-text">
-              Here Will Be
-              <span class="text-[#DF3636] italic">Course Module</span>
-            </h2>
-            <p class="titel-text">
-              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-              est at non suscipit. Felis posuere maecenas interdum sit cras.
-            </p>
+          <span class="font-Inter italic font-extrabold leading-[120%] text-[#DF3636]">
+            Promotion Video
+          </span>
+        </h1>
+      </div>
+      <p class="pb-10 title-text md:pb-16">
+        Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
+        at non suscipit. Felis posuere <br class="hidden md:block" />
+        maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut
+        volutpat lobortis.
+      </p>
+
+      <div class="relative flex items-center justify-center">
+        <div class="w-4/5 border-2 xl:w-full mask-auto aspect-video rounded-xl border-primary/40">
+          <div class="relative w-full h-full video-thumbnail" onclick="playVideo(this)">
+            <img class="rounded-xl" src="https://img.youtube.com/vi/pfu0Ab_FASk/maxresdefault.jpg"
+              alt="Video Thumbnail" />
+
+            <div
+              class="absolute w-12 text-red-500 cursor-pointer custom-play top-1/2 left-1/2 -translate-1/2 sm:w-16 aspect-square">
+              <span
+                class="absolute z-0 inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-primary"></span>
+              <div
+                class="relative z-10 flex items-center justify-center w-full h-full text-2xl bg-white rounded-full sm:text-3xl aspect-square">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
           </div>
+          <img class="absolute object-contain h-full max-w-full top-1/2 left-1/2 md:hidden -translate-1/2 -z-10"
+            src="./images/round.png" alt="" />
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-[24px] items-start justify-between mt-[32px]">
+        <div>
+          <h2 class="font-Roboto font-semibold text-[18px] md:text-[20px] leading-[150%] text-[#38435C] capitalize">
+            Some text will be here
+          </h2>
+          <p class="font-Roboto text-[14px] leading-[150%] text-[#38435C] mt-[8px]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+            neque ut mauris nulla eros.
+          </p>
+        </div>
+        <div>
+          <h2 class="font-Roboto font-semibold text-[18px] md:text-[20px] leading-[150%] text-[#38435C] capitalize">
+            Some text will be here
+          </h2>
+          <p class="font-Roboto text-[14px] leading-[150%] text-[#38435C] mt-[8px]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+            neque ut mauris nulla eros.
+          </p>
+        </div>
+        <div>
+          <h2 class="font-Roboto font-semibold text-[18px] md:text-[20px] leading-[150%] text-[#38435C] capitalize">
+            Some text will be here
+          </h2>
+          <p class="font-Roboto text-[14px] leading-[150%] text-[#38435C] mt-[8px]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+            neque ut mauris nulla eros.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="grid gap-5 accordion sm:grid-cols-2">
-            <div class="border-red-300 accordion-item">
+  <section class="relative py-10 font-Inter overflow-clip">
+    <div
+      class="absolute w-[200%] top-1/12 left-1/2 -translate-y-[10%] sm:translate-y-0 -translate-x-1/2 aspect-video md:aspect-square sm:aspect-2/1 bg-linear-to-t from-white from-80% sm:from-90% to-[#fbdcdc] rounded-t-full z-0">
+    </div>
+    <div class="container module-container">
+      <!-- Background Curve -->
+
+      <div class="relative z-10">
+        <!-- Heading -->
+        <div class="text-center mb-14">
+          <h2 class="header-text">
+            Here Will Be
+            <span class="text-[#DF3636] italic">Course Module</span>
+          </h2>
+          <p class="titel-text">
+            Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+            est at non suscipit. Felis posuere maecenas interdum sit cras.
+          </p>
+        </div>
+
+        <div class="flex gap-5 accordion  ">
+          <div class="flex flex-col gap-5 w-1/2">
+            <div class="border-red-300 accordion-item ">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgRed.png" alt="msg" />
@@ -358,7 +283,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-
             <div class="border-blue-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
@@ -373,7 +297,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-
             <div class="border-green-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
@@ -388,7 +311,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-
             <div class="border-orange-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
@@ -403,6 +325,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
+          </div>
+          <div class="flex flex-col gap-5 w-1/2">
             <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
@@ -417,7 +341,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-
             <div class="border-blue-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
@@ -446,7 +369,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-
             <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
@@ -462,1038 +384,828 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Load More Button -->
-          <div class="mt-12 text-center">
-            <button class="module-button">
-              Load More <i class="fa-solid fa-angle-down"></i>
-            </button>
-          </div>
+        <!-- Load More Button -->
+        <div class="mt-12 text-center">
+          <button class="module-button">
+            Load More <i class="fa-solid fa-angle-down"></i>
+          </button>
         </div>
       </div>
+    </div>
 
-      <!-- Eye Catchy Banner -->
-      <div
-        class="relative flex items-center justify-center w-full h-40 overflow-hidden text-center bg-center bg-cover sm:h-80 md:h-96"
-        style="
+    <!-- Eye Catchy Banner -->
+    <div
+      class="relative flex items-center justify-center w-full h-40 overflow-hidden text-center bg-center bg-cover sm:h-80 md:h-96"
+      style="
           background-image: url(&quot;./images/graphic_design_banner.png&quot;);
-        "
-      >
-        <div class="absolute inset-0 bg-black/40"></div>
+        ">
+      <div class="absolute inset-0 bg-black/40"></div>
 
-        <div class="relative z-10 px-4">
-          <h2 class="text-xl font-bold text-white sm:text-3xl md:text-4xl">
-            Eye Catchy Graphic Design Banner
-          </h2>
-        </div>
+      <div class="relative z-10 px-4">
+        <h2 class="text-xl font-bold text-white sm:text-3xl md:text-4xl">
+          Eye Catchy Graphic Design Banner
+        </h2>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!------------------  Journey_Roadmap -------------- -->
-    <section
-      class="py-8 bg-bottom bg-no-repeat bg-cover sm:py-12 md:py-16 lg:py-24 xl:py-32"
-      style="background-image: url(&quot;./images/cardBg.png&quot;)"
-    >
-      <div class="container px-4 mx-auto">
-        <!-- Header -->
-        <div class="text-center w-full lg:w-[75%] mx-auto mb-12">
-          <h1 class="header-text">
-            An exciting
-            <i class="text-[#DF3636] font-extrabold">Journey Roadmap</i>
-          </h1>
-          <p
-            class="text-[#38435C] text-[16px] md:text-[18px] font-Roboto leading-[150%]"
-          >
-            Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-            est at non suscipit. Felis posuere maecenas interdum sit cras.
+  <!------------------  Journey_Roadmap -------------- -->
+  <section class="py-8 bg-bottom bg-no-repeat bg-cover sm:py-12 md:py-16 lg:py-24 xl:py-32"
+    style="background-image: url(&quot;./images/cardBg.png&quot;)">
+    <div class="container px-4 mx-auto">
+      <!-- Header -->
+      <div class="text-center w-full lg:w-[75%] mx-auto mb-12">
+        <h1 class="header-text">
+          An exciting
+          <i class="text-[#DF3636] font-extrabold">Journey Roadmap</i>
+        </h1>
+        <p class="text-[#38435C] text-[16px] md:text-[18px] font-Roboto leading-[150%]">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+          est at non suscipit. Felis posuere maecenas interdum sit cras.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <!-- Row 1 -->
+      <div class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-3 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="p-6 bg-white shadow-lg card before:from-blue-500 before:bg-linear-to-br ">
+          <div class="flex items-center md:mb-1 lg:mb-4">
+            <div
+              class="w-14 h-14 bg-[#F1F5FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#4285FA]">
+              1
+            </div>
+            <div class="flex-1 h-1  bg-gradient-to-r from-[#4285FA] to-transparent rounded"></div>
+          </div>
+          <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+            Journey Title will be here
+          </h4>
+          <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
           </p>
         </div>
 
-        <!-- Grid -->
-        <!-- Row 1 -->
-        <div class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-3 lg:grid-cols-3">
-          <!-- Card 1 -->
-          <div class="p-6 bg-white shadow-lg card before:from-blue-500">
-            <div class="flex items-center md:mb-1 lg:mb-4">
-              <div
-                class="w-14 h-14 bg-[#F1F5FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#4285FA]"
-              >
-                1
-              </div>
-              <div
-                class="flex-1 h-1  bg-gradient-to-r from-[#4285FA] to-transparent rounded"
-              ></div>
+        <!-- Card 2 -->
+        <div class="card p-6 before:from-[#34A853] shadow-lg bg-white before:bg-linear-to-tr">
+          <div class="flex items-center mb-4">
+            <div
+              class="w-14 h-14 bg-[#EFF8F2] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#34A853]">
+              2
             </div>
-            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
-              Journey Title will be here
-            </h4>
-            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
+            <div class="flex-1 h-1  bg-gradient-to-r from-[#34A853] to-transparent rounded"></div>
           </div>
-
-          <!-- Card 2 -->
-          <div class="card p-6 before:from-[#34A853] shadow-lg bg-white">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-14 h-14 bg-[#EFF8F2] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#34A853]"
-              >
-                2
-              </div>
-              <div
-                class="flex-1 h-1  bg-gradient-to-r from-[#34A853] to-transparent rounded"
-              ></div>
-            </div>
-            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
-              Journey Title will be here
-            </h4>
-            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="card p-6 before:from-[#F88513] shadow-lg bg-white">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-14 h-14 bg-[#FDF5E6] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#F88513]"
-              >
-                3
-              </div>
-              <div
-                class="flex-1 h-1  bg-gradient-to-r from-[#F88513] to-transparent rounded"
-              ></div>
-            </div>
-            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
-              Journey Title will be here
-            </h4>
-            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
-          </div>
+          <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+            Journey Title will be here
+          </h4>
+          <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
+          </p>
         </div>
 
-        <!-- Row 2 -->
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <!-- Card 4 -->
-          <div
-            class="card p-6 2 rounded-[20px] before:from-[#DF3636] shadow-lg bg-white"
-          >
-            <div class="flex items-center mb-4">
-              <div
-                class="w-14 h-14 bg-[#FFE9E9] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#DF3636]"
-              >
-                4
-              </div>
-              <div
-                class="flex-1 h-1  bg-gradient-to-r from-[#DF3636] to-transparent rounded"
-              ></div>
+        <!-- Card 3 -->
+        <div class="card p-6 before:from-[#F88513] shadow-lg bg-white before:bg-linear-to-bl">
+          <div class="flex items-center mb-4">
+            <div
+              class="w-14 h-14 bg-[#FDF5E6] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#F88513]">
+              3
             </div>
-            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
-              Journey Title will be here
-            </h4>
-            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
+            <div class="flex-1 h-1  bg-gradient-to-r from-[#F88513] to-transparent rounded"></div>
           </div>
-
-          <!-- Card 5 -->
-          <div
-            class="card p-6 rounded-[20px] before:from-[#7451FD] shadow-lg bg-white"
-          >
-            <div class="flex items-center mb-4">
-              <div
-                class="w-14 h-14 bg-[#F4F1FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#7451FD]"
-              >
-                5
-              </div>
-              <div
-                class="flex-1 h-1  bg-gradient-to-r from-[#7451FD] to-transparent rounded"
-              ></div>
-            </div>
-            <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
-              Journey Title will be here
-            </h4>
-            <p class="text-[#6F7B88] text-[14px] leading-[150%]">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
-          </div>
+          <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+            Journey Title will be here
+          </h4>
+          <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
+          </p>
         </div>
       </div>
-    </section>
 
-    <!--Products of our students part by Nayemur Rashid -->
+      <!-- Row 2 -->
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <!-- Card 4 -->
+        <div class="card p-6 2 rounded-[20px] before:from-[#DF3636] shadow-lg bg-white before:bg-linear-to-tr">
+          <div class="flex items-center mb-4">
+            <div
+              class="w-14 h-14 bg-[#FFE9E9] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#DF3636]">
+              4
+            </div>
+            <div class="flex-1 h-1  bg-gradient-to-r from-[#DF3636] to-transparent rounded"></div>
+          </div>
+          <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+            Journey Title will be here
+          </h4>
+          <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
+          </p>
+        </div>
 
-    <section class="px-4 py-16 mx-auto sm:px-6 lg:px-12 max-w-305">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="header-text">
-          Projects of
-          <span class="text-[#DF3636] italic">Our Students</span>
-        </h2>
-        <p class="title-text">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
-          at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
-          nunc sodales arcu mi ut volutpat lobortis.
-        </p>
-      </div>
-      <div class="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-4">
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-1.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
-        </div>
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-2.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
-        </div>
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-3.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
-        </div>
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-4.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
-        </div>
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-5.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
-        </div>
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-6.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
-        </div>
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-7.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
-        </div>
-        <div
-          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
-        >
-          <img
-            src="./images/Image-8.png"
-            class="object-cover w-full h-48 rounded-xl"
-            alt="Project"
-          />
-          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
+        <!-- Card 5 -->
+        <div class="card p-6 rounded-[20px] before:from-[#7451FD] shadow-lg bg-white before:bg-linear-to-tl">
+          <div class="flex items-center mb-4">
+            <div
+              class="w-14 h-14 bg-[#F4F1FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#7451FD]">
+              5
+            </div>
+            <div class="flex-1 h-1  bg-gradient-to-r from-[#7451FD] to-transparent rounded"></div>
+          </div>
+          <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">
+            Journey Title will be here
+          </h4>
+          <p class="text-[#6F7B88] text-[14px] leading-[150%]">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
+          </p>
         </div>
       </div>
-      <div class="mt-12 text-center text-white">
-        <button
-          class="bg-[#DF3636] hover:bg-red-300 hover:text-black transition px-8 py-3 rounded-xl font-semibold"
-        >
-          Load More
-          <i class="fa-solid fa-angle-down"></i>
-        </button>
+    </div>
+  </section>
+
+  <!--Products of our students part by Nayemur Rashid -->
+
+  <section class="px-4 py-16 mx-auto sm:px-6 lg:px-12 max-w-305">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="header-text">
+        Projects of
+        <span class="text-[#DF3636] italic">Our Students</span>
+      </h2>
+      <p class="title-text">
+        Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
+        at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
+        nunc sodales arcu mi ut volutpat lobortis.
+      </p>
+    </div>
+    <div class="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-1.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
       </div>
-    </section>
-
-    <section class="px-4 py-16 mx-auto overflow-x-clip">
-      <!-- Heading -->
-      <div class="mb-10 text-center">
-        <h2 class="header-text">
-          Our Students
-          <span class="italic text-red-500">Shared Their Stories</span>
-        </h2>
-        <p class="title-text">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
-          at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
-          nunc sodales arcu mi ut volutpat lobortis.
-        </p>
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-2.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
       </div>
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-3.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
+      </div>
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-4.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
+      </div>
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-5.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
+      </div>
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-6.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
+      </div>
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-7.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
+      </div>
+      <div class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105">
+        <img src="./images/Image-8.png" class="object-cover w-full h-48 rounded-xl" alt="Project" />
+        <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
+      </div>
+    </div>
+    <div class="mt-12 text-center text-white">
+      <button class="bg-[#DF3636] hover:bg-red-300 hover:text-black transition px-8 py-3 rounded-xl font-semibold">
+        Load More
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+    </div>
+  </section>
 
-      <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div
-<<<<<<< HEAD
-              class="bg-blue-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
-              style="height: 200px"
-=======
-              class="flex flex-row overflow-hidden shadow-md bg-blue-50 rounded-2xl"
-              style=" height: 200px"
-            >
-              <!-- Photo -->
-              <div class="w-1/3 py-3 pl-2 aspect-square">
-                <img
-                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
-                  alt="Mahamud Azim"
-                  class="object-cover w-full h-full rounded-xl"
-                />
-              </div>
+  <section class="px-4 py-16 mx-auto overflow-x-clip">
+    <!-- Heading -->
+    <div class="mb-10 text-center">
+      <h2 class="header-text">
+        Our Students
+        <span class="italic text-red-500">Shared Their Stories</span>
+      </h2>
+      <p class="title-text">
+        Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
+        at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
+        nunc sodales arcu mi ut volutpat lobortis.
+      </p>
+    </div>
 
-              <!-- Content RIGHT -->
-              <div
-                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
-              >
-                <!-- Stars -->
-                <div>
-                  <div class="flex items-center gap-1 mb-2">
-                    <span class="text-base font-bold text-gray-800">5.0</span>
-                    <div class="flex gap-0.5 text-amber-400 text-sm">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-
-                  <!-- Review Text -->
-                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
-                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                    ultricies eget amet faucibus diam. Dictum pharetra nisi
-                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-
-                <!-- Name & Batch -->
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
-                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
-                </div>
-              </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div <<<<<<< HEAD class="bg-blue-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
+            style="height: 200px"=======class="flex flex-row overflow-hidden shadow-md bg-blue-50 rounded-2xl"
+            style=" height: 200px">
+            <!-- Photo -->
+            <div class="w-1/3 py-3 pl-2 aspect-square">
+              <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                alt="Mahamud Azim" class="object-cover w-full h-full rounded-xl" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-<<<<<<< HEAD
-              class="bg-red-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
-              style="height: 200px"
-=======
-              class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
-              style=" height: 200px"
-            >
-              <!-- Photo-->
-              <div class="w-1/3 py-3 pl-2 aspect-square">
-                <img
-                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
-                  alt="Mahamud Azim"
-                  class="object-cover w-full h-full rounded-xl"
-                />
-              </div>
 
-              <!-- Content RIGHT -->
-              <div
-                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
-              >
-                <!-- Stars -->
-                <div>
-                  <div class="flex items-center gap-1 mb-2">
-                    <span class="text-base font-bold text-gray-800">5.0</span>
-                    <div class="flex gap-0.5 text-amber-400 text-sm">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
+            <!-- Content RIGHT -->
+            <div class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden">
+              <!-- Stars -->
+              <div>
+                <div class="flex items-center gap-1 mb-2">
+                  <span class="text-base font-bold text-gray-800">5.0</span>
+                  <div class="flex gap-0.5 text-amber-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                   </div>
-
-                  <!-- Review Text -->
-                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
-                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                    ultricies eget amet faucibus diam. Dictum pharetra nisi
-                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                  </p>
                 </div>
 
-                <!-- Name & Batch -->
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
-                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-<<<<<<< HEAD
-              class="bg-green-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
-              style="height: 200px"
-=======
-              class="flex flex-row overflow-hidden shadow-md bg-green-50 rounded-2xl"
-              style=" height: 200px"
-            >
-              <!-- Photo -->
-              <div class="w-1/3 py-3 pl-2 aspect-square">
-                <img
-                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
-                  alt="Mahamud Azim"
-                  class="object-cover w-full h-full rounded-xl"
-                />
+                <!-- Review Text -->
+                <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                  ultricies eget amet faucibus diam. Dictum pharetra nisi
+                  donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                </p>
               </div>
 
-              <!-- Content RIGHT -->
-              <div
-                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
-              >
-                <!-- Stars -->
-                <div>
-                  <div class="flex items-center gap-1 mb-2">
-                    <span class="text-base font-bold text-gray-800">5.0</span>
-                    <div class="flex gap-0.5 text-amber-400 text-sm">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-
-                  <!-- Review Text -->
-                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
-                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                    ultricies eget amet faucibus diam. Dictum pharetra nisi
-                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-
-                <!-- Name & Batch -->
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
-                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-<<<<<<< HEAD
-              class="bg-yellow-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
-              style="height: 200px"
-=======
-              class="flex flex-row overflow-hidden shadow-md bg-yellow-50 rounded-2xl"
-              style=" height: 200px"
-            >
-              <!-- Photo-->
-              <div class="w-1/3 py-3 pl-2 aspect-square">
-                <img
-                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
-                  alt="Mahamud Azim"
-                  class="object-cover w-full h-full rounded-xl"
-                />
-              </div>
-
-              <!-- Content RIGHT -->
-              <div
-                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
-              >
-                <!-- Stars -->
-                <div>
-                  <div class="flex items-center gap-1 mb-2">
-                    <span class="text-base font-bold text-gray-800">5.0</span>
-                    <div class="flex gap-0.5 text-amber-400 text-sm">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-
-                  <!-- Review Text -->
-                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
-                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                    ultricies eget amet faucibus diam. Dictum pharetra nisi
-                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-
-                <!-- Name & Batch -->
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
-                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-<<<<<<< HEAD
-              class="bg-orange-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
-              style="height: 200px"
-=======
-              class="flex flex-row overflow-hidden shadow-md bg-orange-50 rounded-2xl"
-              style=" height: 200px"
-            >
-              <!-- Photo-->
-              <div class="w-1/3 py-3 pl-2 aspect-square">
-                <img
-                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
-                  alt="Mahamud Azim"
-                  class="object-cover w-full h-full rounded-xl"
-                />
-              </div>
-
-              <!-- Content RIGHT -->
-              <div
-                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
-              >
-                <!-- Stars -->
-                <div>
-                  <div class="flex items-center gap-1 mb-2">
-                    <span class="text-base font-bold text-gray-800">5.0</span>
-                    <div class="flex gap-0.5 text-amber-400 text-sm">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-
-                  <!-- Review Text -->
-                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
-                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                    ultricies eget amet faucibus diam. Dictum pharetra nisi
-                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-
-                <!-- Name & Batch -->
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
-                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-<<<<<<< HEAD
-              class="bg-red-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
-              style="height: 200px"
-=======
-              class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
-              style=" height: 200px"
-            >
-              <!-- Photo-->
-              <div class="w-1/3 py-3 pl-2 aspect-square">
-                <img
-                  src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
-                  alt="Mahamud Azim"
-                  class="object-cover w-full h-full rounded-xl"
-                />
-              </div>
-
-              <!-- Content RIGHT -->
-              <div
-                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
-              >
-                <!-- Stars -->
-                <div>
-                  <div class="flex items-center gap-1 mb-2">
-                    <span class="text-base font-bold text-gray-800">5.0</span>
-                    <div class="flex gap-0.5 text-amber-400 text-sm">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-
-                  <!-- Review Text -->
-                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
-                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                    ultricies eget amet faucibus diam. Dictum pharetra nisi
-                    donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-
-                <!-- Name & Batch -->
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
-                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
-                </div>
+              <!-- Name & Batch -->
+              <div>
+                <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                <p class="text-xs text-gray-500">Batch - DMT 2507</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <!-- career section start (Hamim) -->
-    <section
-      class="items-center my-1 mb-10 bg-center bg-no-repeat bg-cover"
-      style="background-image: url(&quot;./images/career-background.png&quot;)"
-    >
-      <div
-        class="container border-2 border-primary bg-white rounded-2xl py-16 px-4 shadow-[0px_4px_40px_0px_rgba(216,108,108,0.25)]"
-      >
-        <div
-          class="grid items-center gap-12 lg:pl-15 text-start lg:grid-cols-2"
-        >
-          <div class="">
-            <h1
-              class="text-4xl font-bold leading-tight text-gray-800 lg:text-5xl font-Inter"
-            >
-              Ready To <br />
-              <span class="italic text-[#DF3636]">Start Your Career</span>
-            </h1>
-
-            <p class="mt-6 leading-relaxed text-gray-600 font-Roboto">
-              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-              est at non suscipit. Felis posuere maecenas interdum sit cras.
-              Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-            </p>
-
-            <div
-              class="inline-flex items-center gap-2 px-4 duration-200 py-2.5 mt-4 text-sm font-medium text-red-500 bg-[#FFFFFF] rounded-full shadow-xl hover:bg-red-500 hover:text-white"
-            >
-              🚨 Limited Seats Available
+        <div class="swiper-slide">
+          <div <<<<<<< HEAD class="bg-red-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
+            style="height: 200px"=======class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
+            style=" height: 200px">
+            <!-- Photo-->
+            <div class="w-1/3 py-3 pl-2 aspect-square">
+              <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                alt="Mahamud Azim" class="object-cover w-full h-full rounded-xl" />
             </div>
 
-            <div
-              class="mt-4 bg-[#f4d7d2] rounded-2xl p-6 ml-4 lg:ml-0 shadow-sm"
-            >
-              <img
-                src="./images/career_banner.png"
-                alt="Design Tools"
-                class="object-contain w-full"
-              />
+            <!-- Content RIGHT -->
+            <div class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden">
+              <!-- Stars -->
+              <div>
+                <div class="flex items-center gap-1 mb-2">
+                  <span class="text-base font-bold text-gray-800">5.0</span>
+                  <div class="flex gap-0.5 text-amber-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <!-- Review Text -->
+                <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                  ultricies eget amet faucibus diam. Dictum pharetra nisi
+                  donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                </p>
+              </div>
+
+              <!-- Name & Batch -->
+              <div>
+                <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                <p class="text-xs text-gray-500">Batch - DMT 2507</p>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="swiper-slide">
+          <div <<<<<<< HEAD class="bg-green-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
+            style="height: 200px"=======class="flex flex-row overflow-hidden shadow-md bg-green-50 rounded-2xl"
+            style=" height: 200px">
+            <!-- Photo -->
+            <div class="w-1/3 py-3 pl-2 aspect-square">
+              <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                alt="Mahamud Azim" class="object-cover w-full h-full rounded-xl" />
+            </div>
 
-          <div
-            class="w-full p-8 mx-auto bg-white shadow-xl sm:w-4/5 lg:max-w-md animated-border-box rounded-2xl lg:mx-0 font-Inter"
-          >
-            <div class="bg-white rounded-[21px] p-8">
-              <h2 class="text-2xl font-semibold text-center text-gray-800">
-                Book Your Seat Now
-              </h2>
-
-              <p class="mt-2 mb-6 text-sm text-center text-gray-500 font-Inter">
-                Start building your professional career for free
-              </p>
-
-              <form class="space-y-4">
-                <div class="input-group">
-                  <label>Your Full Name</label>
-                  <div
-                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                  >
-                    <i class="fa-regular fa-user"></i>
-                    <input type="text" placeholder="Enter Here" />
+            <!-- Content RIGHT -->
+            <div class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden">
+              <!-- Stars -->
+              <div>
+                <div class="flex items-center gap-1 mb-2">
+                  <span class="text-base font-bold text-gray-800">5.0</span>
+                  <div class="flex gap-0.5 text-amber-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                   </div>
                 </div>
 
-                <div class="input-group">
-                  <label>Email Address</label>
-                  <div
-                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                  >
-                    <i class="fa-regular fa-envelope"></i>
-                    <input type="email" placeholder="Enter Here" />
+                <!-- Review Text -->
+                <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                  ultricies eget amet faucibus diam. Dictum pharetra nisi
+                  donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                </p>
+              </div>
+
+              <!-- Name & Batch -->
+              <div>
+                <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                <p class="text-xs text-gray-500">Batch - DMT 2507</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div <<<<<<< HEAD class="bg-yellow-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
+            style="height: 200px"=======class="flex flex-row overflow-hidden shadow-md bg-yellow-50 rounded-2xl"
+            style=" height: 200px">
+            <!-- Photo-->
+            <div class="w-1/3 py-3 pl-2 aspect-square">
+              <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                alt="Mahamud Azim" class="object-cover w-full h-full rounded-xl" />
+            </div>
+
+            <!-- Content RIGHT -->
+            <div class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden">
+              <!-- Stars -->
+              <div>
+                <div class="flex items-center gap-1 mb-2">
+                  <span class="text-base font-bold text-gray-800">5.0</span>
+                  <div class="flex gap-0.5 text-amber-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                   </div>
                 </div>
 
-                <div class="input-group">
-                  <label>Phone Number</label>
-                  <div
-                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                  >
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <input type="tel" placeholder="Enter Here" />
-                  </div>
-                </div>
-                <div class="input-group">
-                  <label>Career Goals</label>
-                  <div
-                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
-                  >
-                    <i class="fa-solid fa-award"></i>
-                    <input type="tel" placeholder="Enter Here" />
+                <!-- Review Text -->
+                <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                  ultricies eget amet faucibus diam. Dictum pharetra nisi
+                  donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                </p>
+              </div>
+
+              <!-- Name & Batch -->
+              <div>
+                <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                <p class="text-xs text-gray-500">Batch - DMT 2507</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div <<<<<<< HEAD class="bg-orange-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
+            style="height: 200px"=======class="flex flex-row overflow-hidden shadow-md bg-orange-50 rounded-2xl"
+            style=" height: 200px">
+            <!-- Photo-->
+            <div class="w-1/3 py-3 pl-2 aspect-square">
+              <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                alt="Mahamud Azim" class="object-cover w-full h-full rounded-xl" />
+            </div>
+
+            <!-- Content RIGHT -->
+            <div class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden">
+              <!-- Stars -->
+              <div>
+                <div class="flex items-center gap-1 mb-2">
+                  <span class="text-base font-bold text-gray-800">5.0</span>
+                  <div class="flex gap-0.5 text-amber-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                   </div>
                 </div>
 
-                <button
-                  type="submit"
-                  class="w-full py-3 font-semibold text-white transition duration-300 bg-red-500 rounded-lg hover:bg-red-600"
-                >
-                  CTA Label Here
-                  <span>
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </span>
-                </button>
-              </form>
+                <!-- Review Text -->
+                <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                  ultricies eget amet faucibus diam. Dictum pharetra nisi
+                  donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                </p>
+              </div>
 
-              <p class="mt-4 text-xs text-center text-gray-400">
-                Lorem ipsum dolor sit amet consectetur.
-              </p>
+              <!-- Name & Batch -->
+              <div>
+                <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                <p class="text-xs text-gray-500">Batch - DMT 2507</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div <<<<<<< HEAD class="bg-red-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
+            style="height: 200px"=======class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
+            style=" height: 200px">
+            <!-- Photo-->
+            <div class="w-1/3 py-3 pl-2 aspect-square">
+              <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
+                alt="Mahamud Azim" class="object-cover w-full h-full rounded-xl" />
+            </div>
+
+            <!-- Content RIGHT -->
+            <div class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden">
+              <!-- Stars -->
+              <div>
+                <div class="flex items-center gap-1 mb-2">
+                  <span class="text-base font-bold text-gray-800">5.0</span>
+                  <div class="flex gap-0.5 text-amber-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <!-- Review Text -->
+                <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
+                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                  ultricies eget amet faucibus diam. Dictum pharetra nisi
+                  donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
+                </p>
+              </div>
+
+              <!-- Name & Batch -->
+              <div>
+                <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                <p class="text-xs text-gray-500">Batch - DMT 2507</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- career section end (Hamim) -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
-    <!-- Frequently asked Questions start -->
-    <section class="">
-      <div class="container py-20 faq-wrapper">
-        <!-- Left Image -->
-        <img
-          src="./images/faq1.png"
-          alt="left design"
-          class="absolute bottom-0 hidden lg:block md:-left-6 lg:left-0 xl:-left-8 md:w-32 lg:w-38 xl:w-56"
-        />
+  <!-- career section start (Hamim) -->
+  <section class="items-center my-1 mb-10 bg-center bg-no-repeat bg-cover"
+    style="background-image: url(&quot;./images/career-background.png&quot;)">
+    <div
+      class="container border-2 border-primary bg-white rounded-2xl py-16 px-4 shadow-[0px_4px_40px_0px_rgba(216,108,108,0.25)]">
+      <div class="grid items-center gap-12 lg:pl-15 text-start lg:grid-cols-2">
+        <div class="">
+          <h1 class="text-4xl font-bold leading-tight text-gray-800 lg:text-5xl font-Inter">
+            Ready To <br />
+            <span class="italic text-[#DF3636]">Start Your Career</span>
+          </h1>
 
-        <!-- Right Image -->
-        <img
-          src="./images/faq2.png"
-          alt="right design"
-          class="absolute bottom-0 hidden lg:block md:-right-6 lg:-right-1 xl:-right-16 md:w-32 lg:w-38 xl:w-56"
-        />
-
-        <div class="faq-header">
-          <h1 class="header-text">Frequently Asked <em>Questions</em></h1>
-          <p class="titele-text">
+          <p class="mt-6 leading-relaxed text-gray-600 font-Roboto">
             Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
             est at non suscipit. Felis posuere maecenas interdum sit cras.
             Egestas sed nunc sodales arcu mi ut volutpat lobortis.
           </p>
-        </div>
 
-        <div class="faq-list">
-          <div class="faq-item open" onclick="toggleFaq(this)">
-            <div class="faq-trigger">
-              <span class="faq-question"
-                >Title wil be here for the frequently asked question</span
-              >
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit. Felis posuere maecenas interdum sit
-                cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-              </p>
-            </div>
+          <div
+            class="inline-flex items-center gap-2 px-4 duration-200 py-2.5 mt-4 text-sm font-medium text-red-500 bg-[#FFFFFF] rounded-full shadow-xl hover:bg-red-500 hover:text-white">
+            🚨 Limited Seats Available
           </div>
 
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-trigger">
-              <span class="faq-question"
-                >Title wil be here for the frequently asked question</span
-              >
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-trigger">
-              <span class="faq-question"
-                >Title wil be here for the frequently asked question</span
-              >
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-trigger">
-              <span class="faq-question"
-                >Title wil be here for the frequently asked question</span
-              >
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-trigger">
-              <span class="faq-question"
-                >Title wil be here for the frequently asked question</span
-              >
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit.
-              </p>
-            </div>
+          <div class="mt-4 bg-[#f4d7d2] rounded-2xl p-6 ml-4 lg:ml-0 shadow-sm">
+            <img src="./images/career_banner.png" alt="Design Tools" class="object-contain w-full" />
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Frequently asked Questions end-->
-
-    <footer class="bg-[#2c1b1b] rounded-t-4xl xl:rounded-t-[100px] pt-16 pb-10">
-      <div class="container flex flex-col gap-y-16">
         <div
-          class="flex flex-col items-center justify-between top-footer lg:flex-row gap-y-16"
-        >
-          <img src="./images/South-Asia-mnemonic_2 1.png" alt="logo" />
-          <div class="flex flex-col items-center gap-2 text-center quires">
-            <p class="pb-2 text-base font-semibold text-white font-Roboto">
-              For Any Queries, Feel Free To Contact Us
+          class="w-full p-8 mx-auto bg-white shadow-xl sm:w-4/5 lg:max-w-md animated-border-box rounded-2xl lg:mx-0 font-Inter">
+          <div class="bg-white rounded-[21px] p-8">
+            <h2 class="text-2xl font-semibold text-center text-gray-800">
+              Book Your Seat Now
+            </h2>
+
+            <p class="mt-2 mb-6 text-sm text-center text-gray-500 font-Inter">
+              Start building your professional career for free
             </p>
-            <div
-              class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base"
-            >
-              <div class="flex items-center gap-2 call">
-                <i class="fa-solid fa-phone-volume"></i>
-                <p class="font-semibold font-Roboto">+91 123 456 7890</p>
+
+            <form class="space-y-4">
+              <div class="input-group">
+                <label>Your Full Name</label>
+                <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" placeholder="Enter Here" />
+                </div>
               </div>
-              <div class="flex items-center gap-2 mail">
-                <i class="fa-solid fa-envelope"></i>
-                <p class="font-semibold font-Roboto">7KtQI@example.com</p>
+
+              <div class="input-group">
+                <label>Email Address</label>
+                <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter Here" />
+                </div>
               </div>
+
+              <div class="input-group">
+                <label>Phone Number</label>
+                <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <input type="tel" placeholder="Enter Here" />
+                </div>
+              </div>
+              <div class="input-group">
+                <label>Career Goals</label>
+                <div class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]">
+                  <i class="fa-solid fa-award"></i>
+                  <input type="tel" placeholder="Enter Here" />
+                </div>
+              </div>
+
+              <button type="submit"
+                class="w-full py-3 font-semibold text-white transition duration-300 bg-red-500 rounded-lg hover:bg-red-600">
+                CTA Label Here
+                <span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </button>
+            </form>
+
+            <p class="mt-4 text-xs text-center text-gray-400">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- career section end (Hamim) -->
+
+  <!-- Frequently asked Questions start -->
+  <section class=" py-20">
+    <div class="container faq-wrapper">
+      <!-- Left Image -->
+      <img src="./images/faq1.png" alt="left design"
+        class="absolute bottom-0 hidden lg:block md:-left-6 lg:left-0 xl:-left-8 md:w-32 lg:w-38 xl:w-56" />
+
+      <!-- Right Image -->
+      <img src="./images/faq2.png" alt="right design"
+        class="absolute bottom-0 hidden lg:block md:-right-6 lg:-right-1 xl:-right-16 md:w-32 lg:w-38 xl:w-56" />
+
+      <div class="faq-header">
+        <h1 class="header-text">Frequently Asked <em class="text-primary" >Questions</em></h1>
+        <p class="title-text">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+          est at non suscipit. Felis posuere maecenas interdum sit cras.
+          Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item ">
+          <div class="faq-trigger">
+            <span class="faq-question">Title wil be here for the frequently asked question</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+
+
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-trigger">
+            <span class="faq-question">Title wil be here for the frequently asked question</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+              eu est at non suscipit.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-trigger">
+            <span class="faq-question">Title wil be here for the frequently asked question</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+              eu est at non suscipit.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-trigger">
+            <span class="faq-question">Title wil be here for the frequently asked question</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+              eu est at non suscipit.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-trigger">
+            <span class="faq-question">Title wil be here for the frequently asked question</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+              eu est at non suscipit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently asked Questions end-->
+
+  <footer class="bg-[#2c1b1b] rounded-t-4xl xl:rounded-t-[100px] pt-16 pb-10">
+    <div class="container flex flex-col gap-y-16">
+      <div class="flex flex-col items-center justify-between top-footer lg:flex-row gap-y-16">
+        <img src="./images/South-Asia-mnemonic_2 1.png" alt="logo" />
+        <div class="flex flex-col items-center gap-2 text-center quires">
+          <p class="pb-2 text-base font-semibold text-white font-Roboto">
+            For Any Queries, Feel Free To Contact Us
+          </p>
+          <div class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base">
+            <div class="flex items-center gap-2 call">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p class="font-semibold font-Roboto">+91 123 456 7890</p>
             </div>
-            <div
-              class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base"
-            >
-              <div class="flex items-center gap-2 call">
-                <i class="fa-solid fa-phone-volume"></i>
-                <p class="font-semibold font-Roboto">+91 123 456 7890</p>
-              </div>
-              <div class="flex items-center gap-2 mail">
-                <i class="fa-solid fa-envelope"></i>
-                <p class="font-semibold font-Roboto">7KtQI@example.com</p>
-              </div>
+            <div class="flex items-center gap-2 mail">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="font-semibold font-Roboto">7KtQI@example.com</p>
             </div>
           </div>
-          <div class="flex flex-col items-center gap-4 app">
-            <p class="font-semibold text-white font-Roboto">Download App</p>
-            <div class="flex items-center gap-4">
-              <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
-                <div class="w-10 h-10 qr">
-                  <img
-                    class="aspect-square"
-                    src="./images/qr-code-svgrepo-com 1.png"
-                    alt="qr"
-                  />
-                </div>
-                <div class="w-10 h-10 logo">
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M29.8736 13.7196C25.2269 11.1206 17.7688 6.94727 6.20063 0.469996C5.42071 -0.0450828 4.52336 -0.112583 3.74805 0.14984L23.5957 19.9975L29.8736 13.7196Z"
-                      fill="#32BBFF"
-                    />
-                    <path
-                      d="M3.74711 0.150391C3.6018 0.199609 3.46039 0.258985 3.32516 0.330703C2.46899 0.793829 1.83984 1.685 1.83984 2.81211V37.1841C1.83984 38.3112 2.46891 39.2023 3.32516 39.6654C3.46016 39.737 3.60149 39.7966 3.74664 39.8462L23.5948 19.9981L3.74711 0.150391Z"
-                      fill="#32BBFF"
-                    />
-                    <path
-                      d="M23.5943 19.998L3.74609 39.8461C4.52164 40.1105 5.41899 40.0482 6.19915 39.5256C17.4178 33.2435 24.7918 29.1196 29.4923 26.4985C29.6232 26.425 29.7514 26.3531 29.8781 26.282L23.5943 19.998Z"
-                      fill="#32BBFF"
-                    />
-                    <path
-                      d="M1.83984 19.998V37.184C1.83984 38.3111 2.46891 39.2023 3.32516 39.6654C3.46016 39.737 3.60149 39.7966 3.74664 39.8461L23.5948 19.998H1.83984Z"
-                      fill="#2C9FD9"
-                    />
-                    <path
-                      d="M6.19876 0.470931C5.27258 -0.140632 4.18039 -0.12321 3.32422 0.331165L23.2926 20.2996L29.8717 13.7206C25.225 11.1216 17.7669 6.94821 6.19876 0.470931Z"
-                      fill="#29CC5E"
-                    />
-                    <path
-                      d="M23.2928 19.6973L3.32422 39.6657C4.18047 40.12 5.27258 40.1462 6.19876 39.5259C17.4174 33.2439 24.7914 29.1199 29.4919 26.4988C29.6228 26.4253 29.751 26.3534 29.8777 26.2823L23.2928 19.6973Z"
-                      fill="#D93F21"
-                    />
-                    <path
-                      d="M38.16 19.9979C38.16 19.0456 37.6794 18.0845 36.727 17.5515C36.727 17.5515 34.9458 16.5577 29.4862 13.5039L22.9922 19.9979L29.4925 26.4983C34.8922 23.4665 36.7269 22.4442 36.7269 22.4442C37.6794 21.9113 38.16 20.9503 38.16 19.9979Z"
-                      fill="#FFD500"
-                    />
-                    <path
-                      d="M36.727 22.4445C37.6794 21.9115 38.16 20.9504 38.16 19.998H22.9922L29.4925 26.4985C34.8923 23.4667 36.727 22.4445 36.727 22.4445Z"
-                      fill="#FFAA00"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
-                <div class="w-10 h-10 qr">
-                  <img
-                    class="aspect-square"
-                    src="./images/qr-code-svgrepo-com 1.png"
-                    alt="qr"
-                  />
-                </div>
-                <div class="w-10 h-10 logo">
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M35.1276 27.7244C34.3016 29.5564 33.9036 30.3744 32.8396 31.9944C31.3556 34.2544 29.2596 37.0704 26.6656 37.0944C24.3616 37.1144 23.7696 35.5944 20.6396 35.6124C17.5116 35.6284 16.8596 37.1224 14.5536 37.1004C11.9596 37.0764 9.97363 34.5344 8.48763 32.2724C4.33363 25.9524 3.89963 18.5324 6.46163 14.5864C8.28163 11.7844 11.1556 10.1444 13.8556 10.1444C16.6056 10.1444 18.3356 11.6524 20.6076 11.6524C22.8136 11.6524 24.1576 10.1404 27.3376 10.1404C29.7376 10.1404 32.2856 11.4504 34.0996 13.7104C28.1556 16.9684 29.1196 25.4564 35.1276 27.7244ZM24.9256 7.61639C26.0796 6.13239 26.9576 4.04039 26.6396 1.90039C24.7516 2.03039 22.5456 3.23039 21.2556 4.79639C20.0876 6.21639 19.1216 8.32239 19.4956 10.3704C21.5556 10.4324 23.6876 9.20239 24.9256 7.61639Z"
-                      fill="#1E1E1F"
-                    />
-                  </svg>
-                </div>
-              </div>
+          <div class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base">
+            <div class="flex items-center gap-2 call">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p class="font-semibold font-Roboto">+91 123 456 7890</p>
+            </div>
+            <div class="flex items-center gap-2 mail">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="font-semibold font-Roboto">7KtQI@example.com</p>
             </div>
           </div>
         </div>
-        <div class="w-full h-px bg-primary/50"></div>
-        <div
-          class="flex flex-wrap justify-center bottom-footer gap-y-14 gap-x-14 lg:gap-x-0 lg:gap-y-14 xl:gap-14 lg:justify-between"
-        >
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
+        <div class="flex flex-col items-center gap-4 app">
+          <p class="font-semibold text-white font-Roboto">Download App</p>
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
+              <div class="w-10 h-10 qr">
+                <img class="aspect-square" src="./images/qr-code-svgrepo-com 1.png" alt="qr" />
+              </div>
+              <div class="w-10 h-10 logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.8736 13.7196C25.2269 11.1206 17.7688 6.94727 6.20063 0.469996C5.42071 -0.0450828 4.52336 -0.112583 3.74805 0.14984L23.5957 19.9975L29.8736 13.7196Z"
+                    fill="#32BBFF" />
+                  <path
+                    d="M3.74711 0.150391C3.6018 0.199609 3.46039 0.258985 3.32516 0.330703C2.46899 0.793829 1.83984 1.685 1.83984 2.81211V37.1841C1.83984 38.3112 2.46891 39.2023 3.32516 39.6654C3.46016 39.737 3.60149 39.7966 3.74664 39.8462L23.5948 19.9981L3.74711 0.150391Z"
+                    fill="#32BBFF" />
+                  <path
+                    d="M23.5943 19.998L3.74609 39.8461C4.52164 40.1105 5.41899 40.0482 6.19915 39.5256C17.4178 33.2435 24.7918 29.1196 29.4923 26.4985C29.6232 26.425 29.7514 26.3531 29.8781 26.282L23.5943 19.998Z"
+                    fill="#32BBFF" />
+                  <path
+                    d="M1.83984 19.998V37.184C1.83984 38.3111 2.46891 39.2023 3.32516 39.6654C3.46016 39.737 3.60149 39.7966 3.74664 39.8461L23.5948 19.998H1.83984Z"
+                    fill="#2C9FD9" />
+                  <path
+                    d="M6.19876 0.470931C5.27258 -0.140632 4.18039 -0.12321 3.32422 0.331165L23.2926 20.2996L29.8717 13.7206C25.225 11.1216 17.7669 6.94821 6.19876 0.470931Z"
+                    fill="#29CC5E" />
+                  <path
+                    d="M23.2928 19.6973L3.32422 39.6657C4.18047 40.12 5.27258 40.1462 6.19876 39.5259C17.4174 33.2439 24.7914 29.1199 29.4919 26.4988C29.6228 26.4253 29.751 26.3534 29.8777 26.2823L23.2928 19.6973Z"
+                    fill="#D93F21" />
+                  <path
+                    d="M38.16 19.9979C38.16 19.0456 37.6794 18.0845 36.727 17.5515C36.727 17.5515 34.9458 16.5577 29.4862 13.5039L22.9922 19.9979L29.4925 26.4983C34.8922 23.4665 36.7269 22.4442 36.7269 22.4442C37.6794 21.9113 38.16 20.9503 38.16 19.9979Z"
+                    fill="#FFD500" />
+                  <path
+                    d="M36.727 22.4445C37.6794 21.9115 38.16 20.9504 38.16 19.998H22.9922L29.4925 26.4985C34.8923 23.4667 36.727 22.4445 36.727 22.4445Z"
+                    fill="#FFAA00" />
+                </svg>
+              </div>
             </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card xl:px-10">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">campus 02 - dhanmondi</h2>
-            </div>
-            <div class="address-details">
-              <p>meher plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
+            <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
+              <div class="w-10 h-10 qr">
+                <img class="aspect-square" src="./images/qr-code-svgrepo-com 1.png" alt="qr" />
+              </div>
+              <div class="w-10 h-10 logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M35.1276 27.7244C34.3016 29.5564 33.9036 30.3744 32.8396 31.9944C31.3556 34.2544 29.2596 37.0704 26.6656 37.0944C24.3616 37.1144 23.7696 35.5944 20.6396 35.6124C17.5116 35.6284 16.8596 37.1224 14.5536 37.1004C11.9596 37.0764 9.97363 34.5344 8.48763 32.2724C4.33363 25.9524 3.89963 18.5324 6.46163 14.5864C8.28163 11.7844 11.1556 10.1444 13.8556 10.1444C16.6056 10.1444 18.3356 11.6524 20.6076 11.6524C22.8136 11.6524 24.1576 10.1404 27.3376 10.1404C29.7376 10.1404 32.2856 11.4504 34.0996 13.7104C28.1556 16.9684 29.1196 25.4564 35.1276 27.7244ZM24.9256 7.61639C26.0796 6.13239 26.9576 4.04039 26.6396 1.90039C24.7516 2.03039 22.5456 3.23039 21.2556 4.79639C20.0876 6.21639 19.1216 8.32239 19.4956 10.3704C21.5556 10.4324 23.6876 9.20239 24.9256 7.61639Z"
+                    fill="#1E1E1F" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script type="module" src="./script.js"></script>
-    <script>
-      function toggleFaq(el) {
-        const answer = el.querySelector(".faq-answer");
+      <div class="w-full h-px bg-primary/50"></div>
+      <div
+        class="flex flex-wrap justify-center bottom-footer gap-y-14 gap-x-14 lg:gap-x-0 lg:gap-y-14 xl:gap-14 lg:justify-between">
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card xl:px-10">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">campus 02 - dhanmondi</h2>
+          </div>
+          <div class="address-details">
+            <p>meher plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script type="module" src="./script.js"></script>
+  <script>
+    function toggleFaq(el) {
+      const answer = el.querySelector(".faq-answer");
 
-        if (el.classList.contains("open")) {
-          answer.style.maxHeight = null;
-          el.classList.remove("open");
-        } else {
-          answer.style.maxHeight = answer.scrollHeight + "px";
-          el.classList.add("open");
-        }
+      if (el.classList.contains("open")) {
+        answer.style.maxHeight = null;
+        el.classList.remove("open");
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        el.classList.add("open");
       }
+    }
 
-      function playVideo(el) {
-        el.innerHTML = `
+    function playVideo(el) {
+      el.innerHTML = `
     <iframe
       width="100%"
       height="100%"
@@ -1503,7 +1215,8 @@
       allowfullscreen
     ></iframe>
   `;
-      }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>

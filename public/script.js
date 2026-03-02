@@ -31,27 +31,59 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const items = document.querySelectorAll(".accordion-item");
-items.forEach((item, index) => {
+
+if (items.length > 0) {
+  items[0].classList.add("active");
+}
+
+items.forEach((item) => {
   item.querySelector(".accordion-header").addEventListener("click", () => {
     const isActive = item.classList.contains("active");
-
-    // আগে সব close
     items.forEach((i) => i.classList.remove("active"));
-
-    // যদি আগেই active থাকে → কিছু করবো না (close হয়ে যাবে)
     if (isActive) return;
-
-    // সব screen এ current item open হবে
     item.classList.add("active");
-
-    // 👉 শুধু sm বা তার উপরে হলে pair open হবে
-    if (window.innerWidth >= 640) {
-      if (index % 2 === 0 && items[index + 1]) {
-        items[index + 1].classList.add("active");
-      }
-      if (index % 2 === 1 && items[index - 1]) {
-        items[index - 1].classList.add("active");
-      }
-    }
   });
 });
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+// প্রথমটা default open থাকবে
+if (faqItems.length > 0) {
+  faqItems[0].classList.add("open");
+  setMaxHeight(faqItems[0]);
+}
+
+faqItems.forEach((item) => {
+
+  // এখন পুরো faq-item এ click
+  item.addEventListener("click", () => {
+    const isOpen = item.classList.contains("open");
+
+    // আগে সব close
+    faqItems.forEach((i) => {
+      i.classList.remove("open");
+      setMaxHeight(i, false);
+    });
+
+    // যদি আগেই open থাকে → close হয়ে যাবে
+    if (isOpen) return;
+
+    // এখন current item open
+    item.classList.add("open");
+    setMaxHeight(item);
+  });
+
+});
+
+// height smooth animation এর জন্য
+function setMaxHeight(item, open = true) {
+  const answer = item.querySelector(".faq-answer");
+
+  if (!answer) return;
+
+  if (open) {
+    answer.style.maxHeight = answer.scrollHeight + "px";
+  } else {
+    answer.style.maxHeight = null;
+  }
+}
